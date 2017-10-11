@@ -274,7 +274,7 @@
 </div>
 
 <!--============================================bride==========================-->
-<div class="row event-row">
+<div id="bride_event" class="row event-row">
 	<div class="section-title">BRIDE EVENTS</div>
 	<div class="groom-img">
 		<img src="<?php echo base_url(); ?>html/images/divider-img.png">
@@ -367,7 +367,7 @@
 
   <!-- Bride Mobile responisve -->
 
-  <div class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
+  <div id="brideEvent" class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
     <div class="carousel-item card-panel white-text" href="#one!">
        <div class="col s12 m4">
         <div class="event-time-container">
@@ -480,32 +480,99 @@
   		<div class="title">
   			GROOM FAMILY & FRIENDS
   		</div>
+      <div class="groom-img">
+        <img src="http://localhost/wedding-website/html/images/divider-img.png">
+      </div>
   	</div>
  </div>
+ <div class="family-area">
   <div class="row family-row  hide-on-small-only hide-on-med-only show-on-large">
   		<div class="col m3 s12">
   			<div class="family-img">
-  			<img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
-  		   </div>
-  		   <div class="family-name">
-  		   	 rajeev dahiya
-  		   </div>
-  		   <div class="family-desination">
-  		   	father
-  		   </div>
+  			   <img  src="<?php echo base_url(); ?>html/images/groom-family-1.jpg">
+  		  </div>
+        <!-- <div class="row relation">
+          <div class="family-name">
+           	 rajeev dahiya
+          </div>
+          <div class="family-desination">
+           	father
+          </div>
+        </div> --> 
   		</div>
 
   		<div class="col m3 s12">
   			<div class="family-img">
-  			<img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
+  			<img  src="<?php echo base_url(); ?>html/images/groom-family-2.jpg">
   		</div>
-  		<div class="family-name">
-  		   	 jaheel dahiya
-  		   </div>
-  		   <div class="family-desination">
-  		   	mother
-  		   </div>
-  		</div>
+      <!-- <div class="row relation">
+    		<div class="family-name">
+    		   	 jaheel dahiya
+    		   </div>
+    		   <div class="family-desination">
+    		   	mother
+    		   </div>
+    		</div> -->
+      </div>
+
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-3.jpg">
+      </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>
+
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-4.jpg">
+      </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>
+
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-5.jpg">
+      </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>
+
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-6.jpg">
+      </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>
+
+  
+
   	</div>
 
      <!-- Groom Family Mobile responisve -->
@@ -514,68 +581,158 @@
     <div class="carousel-item card-panel white-text" href="#one!">
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
+          <img  src="<?php echo base_url(); ?>html/images/groom-family-1.jpg">
          </div>
-         <div class="family-name">
-           rajeev dahiya
-         </div>
-         <div class="family-desination">
-          father
-         </div>
-      </div>
+        <!--  <div class="row relation">
+           <div class="family-name">
+             rajeev dahiya
+           </div>
+           <div class="family-desination">
+            father
+           </div>
+         </div> -->
+        </div>
     </div>
 
     <div class="carousel-item card-panel white-text" href="#two!">
        <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-2.jpg">
       </div>
+      <!-- <div class="row relation">
       <div class="family-name">
            jaheel dahiya
          </div>
          <div class="family-desination">
           mother
          </div>
+       </div> -->
+      </div>
+    </div>
+
+    <div class="carousel-item card-panel white-text" href="#three!">
+       <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-3.jpg">
+      </div>
+      <!-- <div class="row relation">
+      <div class="family-name">
+           jaheel dahiya
+         </div>
+         <div class="family-desination">
+          mother
+         </div>
+       </div> -->
+      </div>
+    </div>
+
+    <div class="carousel-item card-panel white-text" href="#four!">
+       <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-4.jpg">
+      </div>
+      <!-- <div class="row relation">
+      <div class="family-name">
+           jaheel dahiya
+         </div>
+         <div class="family-desination">
+          mother
+         </div>
+       </div> -->
+      </div>
+    </div>
+
+    <div class="carousel-item card-panel white-text" href="#five!">
+       <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-5.jpg">
+      </div>
+      <!-- <div class="row relation">
+      <div class="family-name">
+           jaheel dahiya
+         </div>
+         <div class="family-desination">
+          mother
+         </div>
+       </div> -->
+      </div>
+    </div>
+
+    <div class="carousel-item card-panel white-text" href="#six!">
+       <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/groom-family-6.jpg">
+      </div>
+      <!-- <div class="row relation">
+      <div class="family-name">
+           jaheel dahiya
+         </div>
+         <div class="family-desination">
+          mother
+         </div>
+       </div> -->
       </div>
     </div>
   </div>
-
+</div>
 <!-- Over hide Resposnive family Member -->
 
 
 <!-- Bride Family Member -->
 
-<div class="container-fullwidth title-container">
+<div class="container-fullwidth title-container" id="bride-family">
 	<div class="row title-row">
 		<div class="title">
 		BRIDE FAMILY & FRIENDS
 		</div>
+    <div class="groom-img">
+      <img src="http://localhost/wedding-website/html/images/divider-img.png">
+    </div>
 	</div>
 </div>
- <div class="row family-row hide-on-small-only hide-on-med-only show-on-large">
+ <div id="bride-img-border" class="row family-row hide-on-small-only hide-on-med-only show-on-large">
   		<div class="col m3 s12">
   			<div class="family-img">
-  			<img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
+  			<img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
   		   </div>
+         <!-- <div class="row relation">
   		   <div class="family-name">
   		   	 rajeev dahiya
   		   </div>
   		   <div class="family-desination">
   		   	father
   		   </div>
+       </div> -->
   		</div>
 
   		<div class="col m3 s12">
   			<div class="family-img">
-  			<img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
+  			<img  src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
   		</div>
+      <!-- <div class="row relation">
   		<div class="family-name">
   		   	 jaheel dahiya
   		   </div>
   		   <div class="family-desination">
   		   	mother
   		   </div>
-  		</div>
+  		</div> -->
+    </div>
+
+    <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
+      </div>
+      <!-- <div class="row relation">
+      <div class="family-name">
+           jaheel dahiya
+         </div>
+         <div class="family-desination">
+          mother
+         </div>
+      </div> -->
+    </div>
+    
   	</div>
 
 
@@ -585,29 +742,49 @@
     <div class="carousel-item card-panel white-text" href="#one!">
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
          </div>
-         <div class="family-name">
-           rajeev dahiya
-         </div>
-         <div class="family-desination">
-          father
-         </div>
+         <!-- <div class="row relation">
+           <div class="family-name">
+             rajeev dahiya
+           </div>
+           <div class="family-desination">
+            father
+           </div>
+         </div> -->
       </div>
     </div>
 
     <div class="carousel-item card-panel white-text" href="#two!">
        <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
       </div>
-      <div class="family-name">
-           jaheel dahiya
-         </div>
-         <div class="family-desination">
-          mother
-         </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>  
+    </div>
+
+    <div class="carousel-item card-panel white-text" href="#three!">
+       <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
       </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>  
     </div>
   </div>
 

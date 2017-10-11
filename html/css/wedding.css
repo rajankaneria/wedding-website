@@ -2,17 +2,20 @@ nav{
     height: 90px;
     position: relative;
     background: #7391c3;
+    z-index: 2;
 }
 .bg-img {
     position: absolute;
     overflow: hidden;
+    top: 0;
+    z-index: 0;
 }
 .bg-img img{
     position: relative;
     min-height: 200px;
     overflow: hidden;
-    position: absolute;
     /* max-height: 272px; */
+    width: 100%;
     overflow: hidden;
     z-index: -1;
 }
@@ -52,6 +55,8 @@ span.heart img {
 .wedding-main-content {
     margin: 0 auto;
     width: 100%;
+    position: relative;
+    z-index: 1;
     background: rgba(115, 145, 195, 0.8);
     padding: 20px;
     margin-top: 70px;
@@ -135,6 +140,28 @@ span.heart img {
     width: 90%;
     padding-bottom: 50px;
 }
+
+.family-row .col.m3.s12{
+    position: relative;
+    overflow: hidden;
+    padding-right: 0px;
+    padding-bottom: 0;
+}
+.row.relation {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(60deg, rgba(255, 255, 255, 0.78) 50%,rgba(255, 255, 255, 0.0)100%);
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 6px;
+}
+
+
+.family-area {
+    background: #7391c3;
+    margin-top: -20px;
+}
+
 .family-name {
     font-size: 25px;
     color: rgb(119, 79, 56);
@@ -145,9 +172,15 @@ span.heart img {
      color: rgb(119, 79, 56);
     text-transform: capitalize;
 }
-.family-img img {
-    width: 90%;
+.family-img {
+    margin-bottom: 5px;
 }
+.family-img img {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    border: 5px solid #fff;
+ }
 .wedding-title {
        color: #fff;
     font-size: 35px;
@@ -185,6 +218,8 @@ span.heart img {
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 50px !important;
+    position: relative;
+    z-index: 1;
 }
 
 .countdown-item {
@@ -223,6 +258,8 @@ span.heart img {
 .row.wedding-white {
     background: white;
     padding-top: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .row.couple-detail {
@@ -345,6 +382,9 @@ span.heart img {
     overflow: hidden;
     background-color: rgb(242, 239, 225);
     margin-bottom: 25px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .name-image-container {
@@ -355,6 +395,8 @@ span.heart img {
 .name-image-container img {
     width: 100%;
     height: auto;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .name-details {
@@ -385,7 +427,7 @@ span.heart img {
 .name-details {
     padding: 20px;
     color: rgb(119, 79, 56);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
 }
 .container-fullwidth.last {
@@ -420,6 +462,19 @@ span.heart img {
     margin-top: 100px;
 }
 
+
+div#bride-family {
+    background: #fff;
+}
+div#bride-family .title{
+    color: #7391c3;
+}
+div#bride-img-border img{
+    border: 5px solid #7391c3;
+}
+#bride-img-border{
+    margin-top: -50px;
+}
 .footer
 {
 	/*min-height: 50px;*/
@@ -451,7 +506,48 @@ a.nav-menu {
 
 div#program {
     padding-top: 25px;
+    background: #7391c3;
+    color: #fff;
+    padding-bottom: 25px;
 }
+div#program .section-title{
+    color: #fff;
+}
+
+div#bride_event{
+/*    padding-top: 25px;*/ 
+    background: #fff;
+    color: #7391c3;
+    padding-bottom: 25px;
+}
+div#bride_event .col.s12.m4{
+    background: #7391c3 !important; 
+}
+div#brideEvent .card-panel {
+    background: #7391c3;
+}
+div#bride_event.section-title{
+    color: #7391c3;
+}
+div#bride_event .col.s12.m4 .event-name-container{
+    background: rgb(102, 129, 173);
+}
+div#bride_event .col.s12.m4 .time-icon{
+    color: #fff;
+}
+div#bride_event .col.s12.m4 .time-details{
+    color: #fff;
+}
+div#bride_event .col.s12.m4 .location-icon{
+    color: #fff;
+}
+div#bride_event .col.s12.m4 .location-details{
+    color: #fff;
+}
+div#bride_event .col.s12.m4 .name-details{
+    color: #fff;
+}
+
 
 
 .event-list .m4 {
@@ -485,10 +581,9 @@ div#program {
     .bg-img img {
         position: relative;
         z-index: -1;
-        max-height: 270px;
+        max-height: 286px;
         overflow-x: hidden;
-         width: 100%; 
-        min-height: 270px;
+        min-height: 345px;
     }
     .heart-circle {
         text-align: center;
@@ -565,5 +660,20 @@ div#program {
         left: calc(50% - 28px);
         top: 35%;
         z-index: 1;
+    }
+    .family-area{
+        min-height: 400px;
+        padding-bottom: 20px;
+    }
+    .carousel.carousel-slider{
+        min-height: 400px;
+    }
+
+    #sidenav-overlay{
+        z-index: 1;
+    }
+    .carousel.carousel-slider .carousel-item{
+        background: transparent;
+        box-shadow: none;
     }
 }

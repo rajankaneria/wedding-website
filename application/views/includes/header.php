@@ -58,23 +58,12 @@
 
     <!-- Mobile Slide Menu -->
     <ul id="slide-out" class="side-nav">
-      <li><a href="#!">First Sidebar Link</a></li>
-      <li><a href="#!">Second Sidebar Link</a></li>
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="#!">First</a></li>
-                <li><a href="#!">Second</a></li>
-                <li><a href="#!">Third</a></li>
-                <li><a href="#!">Fourth</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
+      <li><center><label><h5>Menu</h5></label></center></li>
+      <li><a class="nav-menu" href="#home">home</a></li>
+      <li><a href="#couple" class="nav-menu">couple</a></li>
+      <li><a href="#program" class="nav-menu">programs</a></li>
+      <li><a href="#key_person" class="nav-menu">key persons</a></li>
+      <li><a href="#" class="nav-menu">gallery</a></li>
     </ul>
     
     </div>     

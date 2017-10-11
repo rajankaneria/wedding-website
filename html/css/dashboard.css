@@ -1,0 +1,64 @@
+/* page specific stylesheet */
+.wedding-nav
+{
+    height: 150%  !important;
+    background-color: rgb(115, 145, 195);
+}
+.wedding-row
+{
+	width: 90%;
+	line-height: 90px;
+}
+/*a.brand-logo {
+    color: rgb(115, 145, 195);
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    /* font-size: 107px;
+    border-radius: 50px;
+} */
+.brand-logo
+{
+    background-color: #fff;
+   margin: 3px;
+    width: 50px;
+    height: 50px;
+      position: inherit !important;
+    border-radius: 50px;
+  
+}
+.heart-logo
+{
+	background-color: #fff;
+    margin: 3px;
+    width: 35px;
+    height: 35px;
+    position: inherit !important;
+    border-radius: 50px;
+    margin-top: 12px;
+
+}
+.brand
+{
+	padding-top: 18px;
+}
+.brand-logo-a
+{
+   line-height: 54px;
+    font-size: 20px;
+    color: rgb(115, 145, 195);
+    /* padding-right: 21px; */
+    padding-left: 17px;
+}
+.brand-logo-i
+{
+	color: rgb(115, 145, 195);
+    font-size: 18px !important;
+    padding-left: 4px;
+    line-height: 40px !important;
+}
+.nav-menu
+{
+	text-transform: capitalize;
+	font-size: 17px;
+}

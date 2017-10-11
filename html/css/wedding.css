@@ -1,0 +1,384 @@
+.banner-container
+{
+	width: 100%;
+	height: 800px;
+   background-image: url(http://yr.momentsunlimited.in/html/images/v.jpg);
+    background-size:100% 800px;
+    background-repeat: no-repeat;
+}
+.banner-row
+{
+	margin-top: 32px;
+	width: 55%;
+	text-align: center;
+}
+.img1
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+}
+.banner-box1
+{
+	margin-top: 120px;
+	display: inline-block;
+}
+.banner-circle
+{
+           border: 3px solid #7391c3;
+       padding: 15px;
+       width: 235px;
+       height: 235px;
+       border-radius: 160px;
+}
+.with
+{
+    width: 100px;
+    /* left: 46%; */
+    height: auto;
+    /* position: absolute; */
+    margin-top: 200px;
+    padding-left: -9px;
+    position: absolute;
+    left: calc(50% - 53px);
+}
+.wedding-content
+{
+	width: 60%;
+	margin-top: 120px;
+	text-align: center;
+	background-color: rgba(228, 205, 203,0.8);
+}
+.event-list {
+    width: 90%;
+    margin: 0 auto;
+}
+.name
+{
+       padding-top: 15%;
+       padding-bottom: 5%;
+    color: #fff;
+    text-transform: uppercase;
+   
+    font-size: 50px;
+}
+.family-row
+{
+	padding-top: 50px;
+    width: 90%;
+    padding-bottom: 50px;
+}
+.family-name {
+    font-size: 25px;
+    color: rgb(119, 79, 56);
+    text-transform: capitalize;
+}
+.family-desination {
+    font-size: 17px;
+     color: rgb(119, 79, 56);
+    text-transform: capitalize;
+}
+.family-img img {
+    width: 90%;
+}
+.wedding-title {
+       color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.wedding-last-img
+{
+	text-align: center;
+    padding-top: 50px;
+}
+
+.wedding-main-content {
+        margin: 0 auto;
+    width: 60%;
+    background: rgba(115, 145, 195, 0.8);
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.wedding-date {
+   text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+
+.row.wedding-countdown {
+    background: #7391c3;
+    margin-bottom: 0px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+}
+
+.countdown-item {
+    width: 25%;
+    float: left;
+}
+
+.countdown-value {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.countdown-footer {
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+.countdown-item {
+    border-right: 2px solid #fff;
+}
+
+.countdown-item.last {
+    border-right: none;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.row.wedding-white {
+    background: white;
+    padding-top: 50px;
+}
+
+.row.couple-detail {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #7391c3;
+    font-size: 30px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.couple-name {
+    text-align: center;
+}
+
+.couple-intro {
+    text-align: center;
+}
+
+.heart-circle {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background: #E08E79;
+    color: #fff;
+    line-height: 95px;
+    border-radius: 50%;
+    font-size: 28px;
+    margin-top: 40px;
+    border: 5px solid #ccc;
+}
+.image-container img {
+    border: 5px solid #ccc;
+}
+
+.couple-name {}
+
+.couple-name {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #7391c3;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.couple-intro {
+    color: #928f8f;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.container-fullwidth.title-container {
+    background-color: #7391c3;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.time-icon {
+    width: 30px;
+    float: left;
+        color: rgb(164, 164, 164);
+    font-size: 20px;
+}
+
+.time-details {
+    width: calc(100% - 30px);
+    text-align: left;
+    float: right;
+        color: rgb(164, 164, 164);
+    font-size: 16px;
+}
+
+.event-time-container {
+    overflow: hidden;
+        margin-bottom: 10px;
+}
+
+.location-icon {
+    width: 30px;
+    float: left;
+         color: rgb(123, 119, 119);
+     font-size: 20px;
+}
+
+.location-details {
+    width: calc(100% - 30px);
+    float: right;
+        color: rgb(164, 164, 164);
+    text-align: left;
+    font-size: 16px;
+}
+
+.event-name-container {
+    overflow: hidden;
+        background-color: rgb(242, 239, 225);
+}
+
+.name-image-container {
+    width: 80px;
+    float: left;
+}
+
+.name-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.name-details {
+    float: right;
+    width: calc(100% - 80px);
+}
+
+.event-list {
+    overflow: hidden;
+}
+.logo
+{
+    height: 80px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.wedding-img {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.event-location-container {
+    overflow: hidden;
+        margin-bottom: 15px;
+}
+
+.name-details {
+    padding: 20px;
+    color: rgb(119, 79, 56);
+    font-size: 20px;
+    line-height: 48px;
+}
+.container-fullwidth.last {
+    background-color: rgb(63, 63, 63);
+}
+
+.wedding-last-title {
+    color: #fff;
+    padding-top: 10px;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.wedding-last-date {
+    text-align: center;
+    font-size: 25px;
+    color: #827d7d;
+    line-height: 40px;
+    padding-bottom: 34px;
+}
+.happy-img {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.groom-img {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.event-row {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.footer
+{
+	/*min-height: 50px;*/
+    background-color: #313131;
+    overflow: hidden;
+}
+
+.developed-by {
+    color: #6d6b6b;
+    padding: 20px;
+}
+
+.developed-by a {
+    color: #fff;
+}
+
+.social-item {
+    float: right;
+    padding: 8px 13px;
+    background: #fff;
+    margin: 8px;
+    /* padding-left: 10px; */
+    border-radius: 50%;
+}
+
+a.nav-menu {
+    line-height: 95px;
+}
+
+div#program {
+    padding-top: 25px;
+}

@@ -1,16 +1,79 @@
+nav{
+    height: 90px;
+    position: relative;
+    background: #7391c3;
+}
+.bg-img {
+    position: absolute;
+    overflow: hidden;
+}
+.bg-img img{
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    position: absolute;
+    /* max-height: 272px; */
+    overflow: hidden;
+    z-index: -1;
+}
+
+.profile-area {
+    top: 50px;
+    position: relative;
+    width: 50%;
+    margin: 5px auto !important;
+    margin-bottom: 50px !important;
+}
+.profile-1 {
+    position: relative;
+    display: inline-block;
+    width: 50% !important;
+
+}
+
+.profile-1 img {
+    border: 3px solid #7391c3;
+    padding: 10px;
+    border-radius: 150px;
+    background: rgba(115, 145, 195, 0.5);
+}
+span.heart{
+    position: absolute;
+    overflow: hidden;
+    left: calc(50% - 43px);
+    top: 35%;
+    z-index: 1;
+}
+span.heart img {
+    height: 70px;
+}
+
+
+.wedding-main-content {
+    margin: 0 auto;
+    width: 100%;
+    background: rgba(115, 145, 195, 0.8);
+    padding: 20px;
+    margin-top: 70px;
+    display: inline-block;
+}
+
+
+
+
 .banner-container
 {
 	width: 100%;
 	height: 800px;
-   background-image: url(http://yr.momentsunlimited.in/html/images/v.jpg);
+    background-image: url(http://yr.momentsunlimited.in/html/images/v.jpg);
     background-size:100% 800px;
     background-repeat: no-repeat;
 }
 .banner-row
 {
-	margin-top: 32px;
-	width: 55%;
-	text-align: center;
+    margin-top: 0px;
+    width: 50%;
+    margin: 0 auto;
 }
 .img1
 {
@@ -23,14 +86,17 @@
 {
 	margin-top: 120px;
 	display: inline-block;
+    width: 260px !important;
 }
 .banner-circle
 {
-           border: 3px solid #7391c3;
-       padding: 15px;
-       width: 235px;
-       height: 235px;
-       border-radius: 160px;
+   border: 3px solid #7391c3;
+   padding: 15px;
+   width: 235px;
+   height: 235px;
+   border-radius: 160px;
+   margin: 0 auto;
+   background: rgba(136, 159, 195, 0.64);
 }
 .with
 {
@@ -96,14 +162,14 @@
 	text-align: center;
     padding-top: 50px;
 }
-
+/*
 .wedding-main-content {
         margin: 0 auto;
     width: 60%;
     background: rgba(115, 145, 195, 0.8);
     padding: 20px;
     margin-top: 70px;
-}
+}*/
 
 .wedding-date {
    text-align: center;
@@ -167,6 +233,7 @@
 .section-title {
     color: #7391c3;
     font-size: 30px;
+    font-weight: 500;
 }
 
 .image-container {
@@ -207,8 +274,11 @@
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 15px;
     margin-bottom: 15px;
+    font-weight: 300;
 }
-
+.couple-name span {
+    font-weight: 500;
+}
 .couple-intro {
     color: #928f8f;
 }
@@ -253,7 +323,7 @@
 
 .event-time-container {
     overflow: hidden;
-        margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .location-icon {
@@ -273,7 +343,8 @@
 
 .event-name-container {
     overflow: hidden;
-        background-color: rgb(242, 239, 225);
+    background-color: rgb(242, 239, 225);
+    margin-bottom: 25px;
 }
 
 .name-image-container {
@@ -299,7 +370,6 @@
     height: 80px;
     width: auto;
     margin-top: 5px;
-    margin-left: 10px;
 }
 .wedding-img {
     text-align: center;
@@ -316,7 +386,7 @@
     padding: 20px;
     color: rgb(119, 79, 56);
     font-size: 20px;
-    line-height: 48px;
+    line-height: 1.5;
 }
 .container-fullwidth.last {
     background-color: rgb(63, 63, 63);
@@ -381,4 +451,119 @@ a.nav-menu {
 
 div#program {
     padding-top: 25px;
+}
+
+
+.event-list .m4 {
+    border: 1px solid #AAA;
+    background: #fff !important;
+    overflow: hidden;
+    margin: 10px;
+    width: 32% !IMPORTANT;
+    padding: 25px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+
+
+/*Media Mobile Resposive*/
+
+@media(max-width: 768px){
+    .profile-area{
+        width: 100%;
+    }
+    nav .button-collapse {
+        float: left;
+        position: relative;
+        z-index: 1;
+        height: 94px;
+        margin: 0px 25px;
+        padding: 25px;
+        left: 0;
+        margin-left: 0;
+    }
+    .bg-img img {
+        position: relative;
+        z-index: -1;
+        max-height: 270px;
+        overflow-x: hidden;
+         width: 100%; 
+        min-height: 270px;
+    }
+    .heart-circle {
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        background: #E08E79;
+        color: #fff;
+        line-height: 95px;
+        border-radius: 50%;
+        font-size: 30px;
+        margin-top: 30px;
+        border: 5px solid #ccc;
+        margin-bottom: 30px;
+    }
+    .family-row{
+        text-align: center;
+    }
+    .title{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+
+    /*======= time =========*/    
+    .row.wedding-countdown{
+        padding:25px 0px !important;
+    }
+    .countdown-item{
+        border-right: 1px solid #fff;
+    }
+    .countdown-footer {
+        text-align: center;
+        color: #ececec;
+        font-weight: 300;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .countdown-value {
+        text-align: center;
+        color: #fff;
+        font-size: 38px;
+        line-height: 1;
+    }
+
+    .section-title{
+        margin-top: 0px;
+    }
+
+    .event-row {
+        margin-bottom: 50px; 
+        margin-top: 50px;
+    }
+    .wedding-last-title{
+        font-size: 32px;
+    }
+    .wedding-last-date{
+        font-size: 18px;
+    }
+
+    .carousel{
+        height: 350px !important;
+    }
+
+
+
+    span.heart img {
+        height: 45px;
+    }
+    span.heart {
+        position: absolute;
+        overflow: hidden;
+        left: calc(50% - 28px);
+        top: 35%;
+        z-index: 1;
+    }
 }

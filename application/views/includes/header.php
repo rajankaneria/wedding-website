@@ -13,7 +13,9 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-
+    <!-- Animation -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/js/animations.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/css/animations.min.css">
 
     <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -38,28 +40,42 @@
 
 </head>
 <body>
-   
-   <nav>
-    <div class="nav-wrapper wedding-nav">
-       
+  <nav>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
-      <a href="" >
-        <img class="logo" src="<?php echo  base_url(); ?>html/images/logo.png">
-      </a>
-        <!--<ul id="nav-mobile" class="left hide-on-med-and-down brand">
-        <li class="brand-logo"><a class="brand-logo-a" href="sass.html">R</a></li>
-        <li class="heart-logo"><a class="brand-logo-i" href="sass.html"><i class="fa fa-heart brand-logo-i" aria-hidden="true"></i></a></li>
-        <li class="brand-logo"><a  class="brand-logo-a" href="collapsible.html">Y</a></li>
-      </ul>-->
-     
-
+    <div class="nav-wrapper container">
+      <a href="#"><img class="logo" src="<?php echo  base_url(); ?>html/images/logo.png"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="nav-menu" href="#home">home</a></li>
         <li><a href="#couple" class="nav-menu">couple</a></li>
         <li><a href="#program" class="nav-menu">programs</a></li>
-         <li><a href="#key_person" class="nav-menu">key persons</a></li>
-          <li><a href="#" class="nav-menu">gallery</a></li>
+        <li><a href="#key_person" class="nav-menu">key persons</a></li>
+        <li><a href="#" class="nav-menu">gallery</a></li>
       </ul>
-  </div>
-    </div>
+    
+
+
+
+    <!-- Mobile Slide Menu -->
+    <ul id="slide-out" class="side-nav">
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    </div>     
   </nav>

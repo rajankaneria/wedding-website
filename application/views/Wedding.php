@@ -39,32 +39,28 @@
 		</div>
   </div> -->
 
-
-
-
-
-
 <div class="row wedding-countdown">
 	<div class="container ">
+    <input type="hidden" id="weddingDate" value="<?php echo $date = "January 5, 2018"; ?>" />
 		<div class="countdown-item">
-			<div class="countdown-value">31</div>
+			<div class="countdown-value" id="days"></div>
 			<div class="countdown-footer">Days</div>
 		</div>
 
 		<div class="countdown-item">
-			<div class="countdown-value">12</div>
+			<div class="countdown-value" id="hours"></div>
 			<div class="countdown-footer">Hours</div>
 		</div>
 
 
 		<div class="countdown-item">
-			<div class="countdown-value">42</div>
+			<div class="countdown-value" id="minutes"></div>
 			<div class="countdown-footer">Minutes</div>
 		</div>
 
 
 		<div class="countdown-item last">
-			<div class="countdown-value">15</div>
+			<div class="countdown-value" id="seconds"></div>
 			<div class="countdown-footer">Seconds</div>
 		</div>
 
@@ -191,7 +187,7 @@
 
   <!-- Mobile responisve -->
 
-  <div class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
+  <div id="groomEvent-area" class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
     <div class="carousel-item card-panel white-text" href="#one!">
       <div class="col s12 m4">
 
@@ -738,7 +734,7 @@
 
 <!-- Bride Family Member Mobile Responsive -->
 
-  <div class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
+  <div id="brideFamily-mobile" class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
     <div class="carousel-item card-panel white-text" href="#one!">
       <div class="col m3 s12">
         <div class="family-img">

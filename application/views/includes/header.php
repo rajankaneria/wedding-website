@@ -40,17 +40,19 @@
 
 </head>
 <body>
-  <nav>
+  <nav class="nav-fixed">
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
     <div class="nav-wrapper container">
       <a href="#"><img class="logo" src="<?php echo  base_url(); ?>html/images/logo.png"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a class="nav-menu" href="#home">home</a></li>
-        <li><a href="#couple" class="nav-menu">couple</a></li>
-        <li><a href="#program" class="nav-menu">programs</a></li>
-        <li><a href="#key_person" class="nav-menu">key persons</a></li>
+        <li><a id="scrollHome" class="nav-menu" href="#home">home</a></li>
+        <li><a id="scrollCouple" href="#couple" class="nav-menu">couple</a></li>
+        <li><a id="scrollProgram" href="#program" class="nav-menu">programs</a></li>
+        <li><a id="scrollKey_person" href="#key_person" class="nav-menu">key persons</a></li>
         <li><a href="#" class="nav-menu">gallery</a></li>
+        <li><a href="#rsvpModal" class="nav-menu modal-trigger">RSVP</a></li>
+
       </ul>
     
 

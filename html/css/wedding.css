@@ -1,8 +1,67 @@
 nav{
     height: 90px;
-    position: relative;
+    position: absolute;
     background: #7391c3;
     z-index: 2;
+    top: 0;
+    overflow: hidden;
+}
+.nav-fixed{
+    height: 90px;
+    position: absolute;
+    top: 0;
+    background: #7391c3;
+    z-index: 2;
+
+        -webkit-transition: -webkit-transform .195s ease-in;
+      transition: -webkit-transform .195s ease-in;
+      transition: transform .195s ease-in;
+      transition: transform .195s ease-in, -webkit-transform .195s ease-in;
+      animation:slide-up 0.1s;
+    }
+    @keyframes slide-up {
+        0% {
+            opacity: 0;
+            transform: translateY(0%);
+        } 
+        100% {
+            opacity: 0.9;
+            transform: translateY(0);
+        } 
+    }
+
+.fixed {
+      z-index: 100;
+      position: fixed;
+      background: #7391c3;
+      top: 0;
+      left: 0;
+      margin-top: 0;
+      min-width: 100%;
+      border-bottom: 2px solid #5A7DB9;
+      opacity: .97;
+      transition: opacity .5s ease-out;
+      -webkit-transition: -webkit-transform .195s ease-in !important;
+      transition: -webkit-transform .195s ease-in !important;
+      transition: transform .195s ease-in !important;
+      transition: transform .195s ease-in, -webkit-transform .195s ease-in !important;
+      animation:slide-down 0.7s !important;
+    }
+
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        } 
+        100% {
+            opacity: 0.9;
+            transform: translateY(0);
+        } 
+
+}
+
+#home{
+    margin-top: 90px;
 }
 .bg-img {
     position: absolute;
@@ -562,6 +621,40 @@ div#bride_event .col.s12.m4 .name-details{
 
 
 
+/*=========================== RSVP =================================*/
+.guestNumber{
+
+}
+.btn-yes-no{
+    background: #7391c3;
+    color: #fff;
+    opacity: 0.7;
+}
+.btn-yes-no:hover{
+    background: #7391c3;
+    color: #fff;
+    opacity: 1;
+}
+.guestNumber ul a{
+    display: inline-block;
+    background: #eee;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.guestNumber ul a:hover{
+    background: #7391c3;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 /*Media Mobile Resposive*/
 
 @media(max-width: 768px){
@@ -581,9 +674,8 @@ div#bride_event .col.s12.m4 .name-details{
     .bg-img img {
         position: relative;
         z-index: -1;
-        max-height: 286px;
         overflow-x: hidden;
-        min-height: 345px;
+        min-height: 360px;
     }
     .heart-circle {
         text-align: center;
@@ -669,11 +761,18 @@ div#bride_event .col.s12.m4 .name-details{
         min-height: 400px;
     }
 
+    #groomEvent-area .card-panel{
+        background: #fff !important;
+    }
+
     #sidenav-overlay{
         z-index: 1;
     }
     .carousel.carousel-slider .carousel-item{
         background: transparent;
         box-shadow: none;
+    }
+    #brideFamily-mobile{
+        margin-top: -50px;
     }
 }

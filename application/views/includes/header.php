@@ -48,9 +48,9 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a id="scrollHome" class="nav-menu" href="#home">home</a></li>
         <li><a id="scrollCouple" href="#couple" class="nav-menu">couple</a></li>
-        <li><a id="scrollProgram" href="#program" class="nav-menu">programs</a></li>
+        <li><a id="scrollProgram" href="#program" class="nav-menu">Functions</a></li>
         <li><a id="scrollKey_person" href="#key_person" class="nav-menu">key persons</a></li>
-        <li><a href="#" class="nav-menu">gallery</a></li>
+        <li><a id="scrollGallery" href="#gallery" class="nav-menu">gallery</a></li>
         <li><a href="#rsvpModal" class="nav-menu modal-trigger">RSVP</a></li>
 
       </ul>
@@ -61,11 +61,12 @@
     <!-- Mobile Slide Menu -->
     <ul id="slide-out" class="side-nav">
       <li><center><label><h5>Menu</h5></label></center></li>
-      <li><a class="nav-menu" href="#home">home</a></li>
-      <li><a href="#couple" class="nav-menu">couple</a></li>
-      <li><a href="#program" class="nav-menu">programs</a></li>
-      <li><a href="#key_person" class="nav-menu">key persons</a></li>
-      <li><a href="#" class="nav-menu">gallery</a></li>
+      <li><a id="scrollHome" class="nav-menu" href="#home">home</a></li>
+        <li><a id="scrollCouple" href="#couple" class="nav-menu">couple</a></li>
+        <li><a id="scrollProgram" href="#program" class="nav-menu">Functions</a></li>
+        <li><a id="scrollKey_person" href="#key_person" class="nav-menu">key persons</a></li>
+        <li><a id="scrollGallery" href="#gallery" class="nav-menu">gallery</a></li>
+        <li><a href="#rsvpModal" class="nav-menu modal-trigger">RSVP</a></li>
     </ul>
     
     </div>     

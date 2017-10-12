@@ -1,16 +1,20 @@
 nav{
     height: 90px;
     position: absolute;
-    background: #7391c3;
+    background: rgb(49, 58, 74);
     z-index: 2;
     top: 0;
     overflow: hidden;
+    border-bottom: 2px solid rgb(35, 40, 49);
+}
+nav ul a{
+    color: #d2ae6d;
 }
 .nav-fixed{
     height: 90px;
     position: absolute;
     top: 0;
-    background: #7391c3;
+    background: rgb(49, 58, 74);
     z-index: 2;
 
         -webkit-transition: -webkit-transform .195s ease-in;
@@ -33,12 +37,12 @@ nav{
 .fixed {
       z-index: 100;
       position: fixed;
-      background: #7391c3;
+      background: rgb(49, 58, 74);
       top: 0;
       left: 0;
       margin-top: 0;
       min-width: 100%;
-      border-bottom: 2px solid #5A7DB9;
+      border-bottom:2px solid rgb(35, 40, 49);
       opacity: .97;
       transition: opacity .5s ease-out;
       -webkit-transition: -webkit-transform .195s ease-in !important;
@@ -94,10 +98,10 @@ nav{
 }
 
 .profile-1 img {
-    border: 3px solid #7391c3;
+    border: 3px solid rgb(49, 58, 74);
     padding: 10px;
     border-radius: 150px;
-    background: rgba(115, 145, 195, 0.5);
+    background: rgba(49, 58, 74, 0.8);
 }
 span.heart{
     position: absolute;
@@ -116,10 +120,11 @@ span.heart img {
     width: 100%;
     position: relative;
     z-index: 1;
-    background: rgba(115, 145, 195, 0.8);
+    background: rgba(54, 63, 79, 1);
     padding: 20px;
     margin-top: 70px;
     display: inline-block;
+    margin-bottom: -19px;
 }
 
 
@@ -217,7 +222,7 @@ span.heart img {
 
 
 .family-area {
-    background: #7391c3;
+    background: #313a4a;
     margin-top: -20px;
 }
 
@@ -272,7 +277,7 @@ span.heart img {
 
 
 .row.wedding-countdown {
-    background: #7391c3;
+    background: rgb(49, 58, 74);
     margin-bottom: 0px;
     padding: 20px;
     padding-top: 50px;
@@ -327,7 +332,7 @@ span.heart img {
 }
 
 .section-title {
-    color: #7391c3;
+    color: rgb(49, 58, 74);
     font-size: 30px;
     font-weight: 500;
 }
@@ -384,7 +389,7 @@ span.heart img {
     margin-top: 50px;
 }
 .container-fullwidth.title-container {
-    background-color: #7391c3;
+    background-color: rgb(49, 58, 74);
 }
 
 .title {
@@ -490,7 +495,7 @@ span.heart img {
     line-height: 1.5;
 }
 .container-fullwidth.last {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(55, 64, 79);
 }
 
 .wedding-last-title {
@@ -526,10 +531,10 @@ div#bride-family {
     background: #fff;
 }
 div#bride-family .title{
-    color: #7391c3;
+    color: rgb(49, 58, 74);
 }
 div#bride-img-border img{
-    border: 5px solid #7391c3;
+    border: 5px solid rgb(49, 58, 74);
 }
 #bride-img-border{
     margin-top: -50px;
@@ -537,7 +542,7 @@ div#bride-img-border img{
 .footer
 {
 	/*min-height: 50px;*/
-    background-color: #313131;
+    background-color: #2e3644;
     overflow: hidden;
 }
 
@@ -565,7 +570,7 @@ a.nav-menu {
 
 div#program {
     padding-top: 25px;
-    background: #7391c3;
+    background: rgb(49, 58, 74);
     color: #fff;
     padding-bottom: 25px;
 }
@@ -580,16 +585,16 @@ div#bride_event{
     padding-bottom: 25px;
 }
 div#bride_event .col.s12.m4{
-    background: #7391c3 !important; 
+    background: rgb(49, 58, 74) !important; 
 }
 div#brideEvent .card-panel {
-    background: #7391c3;
+    background: #313a4a;
 }
 div#bride_event.section-title{
     color: #7391c3;
 }
 div#bride_event .col.s12.m4 .event-name-container{
-    background: rgb(102, 129, 173);
+    background: rgba(102, 129, 173,0.1);
 }
 div#bride_event .col.s12.m4 .time-icon{
     color: #fff;
@@ -622,37 +627,125 @@ div#bride_event .col.s12.m4 .name-details{
 
 
 /*=========================== RSVP =================================*/
+.modal{
+    max-height: 90%;
+}
+.modal.modal-fixed-footer {
+    height: 80%;
+}
+
+div#areYouComming {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 50px !important;
+    margin-top: 50px;
+}
+#areYouComming h4 {
+    border-bottom: 1px solid #eee;
+}
+div#RsvpDetails h5 {
+    color: #394962;
+    /*border-bottom: 1px solid rgba(204, 204, 204, 0.24);
+    padding-bottom: 10px;*/
+}
+div#RsvpDetails .row:first-child{
+    border-bottom: 1px solid rgba(57, 73, 98, 0.4);
+    padding-bottom: 10px;
+}
+div#RsvpDetails .row:last-child {
+    border: none;
+}
+.guestNumber{
+    text-align: center;
+}
+
+.arrivalBy ul a {
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.arrivalBy ul a:hover {
+    color: rgb(57, 73, 98);
+    padding: 15px;
+    border-bottom: 2px solid #394962;
+}
+.departureBy ul a {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    
+}
+.departureBy ul a:hover {
+    color: rgb(57, 73, 98);
+    padding: 15px;
+    border-bottom: 2px solid #394962;
+}
+
+#RsvpDetails{
+    display: none;
+}
 .guestNumber{
 
 }
 .btn-yes-no{
-    background: #7391c3;
+    background: #394962;
     color: #fff;
     opacity: 0.7;
+    margin: 10px;
 }
 .btn-yes-no:hover{
-    background: #7391c3;
+    background: #394962;
     color: #fff;
     opacity: 1;
 }
 .guestNumber ul a{
     display: inline-block;
     background: #eee;
+    color: #394962;
     padding: 5px;
     height: 30px;
     width: 30px;
     text-align: center;
 }
 .guestNumber ul a:hover{
-    background: #7391c3;
+    background: #394962;
     color: #fff;
 }
 
+.btn-submit{
+    background: #394962;
+    border: 2px solid #394962;
+    line-height: 1;
+}
+.btn-submit:hover,.btn-submit:focus,.btn-submit.active{
+    border: 2px solid #394962;
+    background: transparent;
+    color: #394962;
+    font-weight: 500;
+}
 
 
+/*======= Not Comming */
+#notComming{
+    display: none;
+}
+.btnBack{
+    position: absolute;
+    top: 25px;
+}
 
+.btnBack:before {
+    content: "\f060";
+    font-family: fontawesome;
+    padding-right: 10px;
+    font-size: 12px;
+}
 
-
+.modal-content h4{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    color: #394962;
+}
 
 
 /*Media Mobile Resposive*/
@@ -774,5 +867,55 @@ div#bride_event .col.s12.m4 .name-details{
     }
     #brideFamily-mobile{
         margin-top: -50px;
+    }
+
+
+
+
+    /*========== RSVP AREA ============*/
+
+    @media(max-width: 768px){
+        
+        div#areYouComming{
+            width: 100%;
+            padding: 0px;
+        }
+        .modal{
+            width: 90%;
+        }
+        .modal .modal-content {
+            padding-top: 80px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .arrival{
+            text-align: center;
+        }
+        .departure{
+            text-align: center;
+        }
+        .modal .modal-content{
+            padding-top: 80px;
+        }
+        .guestNumber ul a{
+            margin-bottom: 10px;
+        }
+        .arrivalBy ul a{
+            padding: 10px;
+            line-height: 4;
+        }
+        .departureBy ul a{
+            padding: 10px;
+            line-height: 4;
+        }
+        .arrivalBy ul a:hover,.arrivalBy ul a:focus,.arrivalBy ul a.active{
+            padding: 10px;
+        }
+        .departureBy ul a{
+            padding: 10px;
+        }
+        .departureBy ul a:hover,.departureBy ul a:focus,.departureBy ul a:active{
+            padding: 10px;
+        }
     }
 }

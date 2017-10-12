@@ -470,8 +470,8 @@
 
 
 
-
-  <div class="container-fullwidth title-container" id="key_person">
+<div id="key_person"></div>
+  <div class="container-fullwidth title-container" >
   	<div class="row title-row">
   		<div class="title">
   			GROOM FAMILY & FRIENDS
@@ -675,7 +675,7 @@
 
 
 <!-- Bride Family Member -->
-
+<div id="gallery"></div>
 <div class="container-fullwidth title-container" id="bride-family">
 	<div class="row title-row">
 		<div class="title">

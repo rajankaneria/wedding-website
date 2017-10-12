@@ -49,7 +49,7 @@ $('.button-collapse').sideNav({
 
     $('#scrollHome').click(function() {
 	  $('html, body').animate({
-	    scrollTop: $("div#home").offset().top
+	    scrollTop: $("div#home").offset().top-90
 		});
 	});
 
@@ -61,13 +61,20 @@ $('.button-collapse').sideNav({
 
 	$('#scrollProgram').click(function() {
 	  $('html, body').animate({
-	    scrollTop: $("div#program").offset().top
+	    scrollTop: $("div#program").offset().top -20
 		});
 	});
 
 	$('#scrollKey_person').click(function() {
 	  $('html, body').animate({
-	    scrollTop: $("div#key_person").offset().top
+	    scrollTop: $("div#key_person").offset().top - 50
+		});
+	});
+
+
+	$('#scrollGallery').click(function() {
+	  $('html, body').animate({
+	    scrollTop: $("div#gallery").offset().top - 50
 		});
 	});
 
@@ -85,9 +92,13 @@ $('.button-collapse').sideNav({
 	    }
     });
 
+
+
+	/*============ RSVP Form ===========================*/
+
+	
+	
 });
-
-
 
 
 

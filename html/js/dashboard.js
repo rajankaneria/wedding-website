@@ -96,8 +96,39 @@ $('.button-collapse').sideNav({
 
 	/*============ RSVP Form ===========================*/
 
+	/*============ Gallery ===================*/
+	  $('#lightgallery').lightGallery({
+	    pager: true
+	  });
+
+	  $('.eventButtons a').on("click", function(){
+	  	$('.eventButtons a').removeClass('active');
+	 	$(this).addClass('active');
+	  });
+		
+	$('.eventButtons a').on("click", function(){
+	 	var title = $(this).attr('id');
+	 	console.log(title);
+	 	$('.EventGallery').hide();
+	 	$("#"+title+'-box').fadeIn(1000);
+	});
+
+
+	/*============= Mobile Gallery ================*/
+	$('.eventButtons-mobile a').on("click", function(){
+	  	$('.eventButtons-mobile a').removeClass('active');
+	 	$(this).addClass('active');
+	  });
+		
+	$('.eventButtons-mobile a').on("click", function(){
+	 	var Mgallery = $(this).attr('id');
+	 	console.log(Mgallery);
+	 	$('.EventGallery-mobile').removeClass('active-gallery');
+	 	$("#"+Mgallery+'-box-mobile').addClass('active-gallery');
+	});
+    
 	
-	
+
 });
 
 

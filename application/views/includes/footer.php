@@ -6,7 +6,7 @@
       <!-- <p>A bunch of text</p> -->
 
       <div class="row" id="areYouComming">
-      	 <div class="col s12 m12"><h5>Are You Comming?</h5></div>
+      	 <div class="col s12 m12"><h5>Are You Coming?</h5></div>
       	 <div class="col s12 m12">
 	      	 <button id="btnYes" class="btn btn-yes-no">YES</button>
 	      	 <button id="btnNo" class="btn btn-yes-no">NO</button>
@@ -51,6 +51,11 @@
       				<a href="#!" data-value='plane'><i class="fa fa-2x fa-plane" aria-hidden="true"></i></a>
 	      			</ul>
       			</div>
+      			<div id="ArrivalPNR">
+      				<div class="input-field">
+      					<input type="text" name="pnrNo" placeholder="PNR No.">
+      				</div>
+      			</div>
       		</div>
       	</div>
 
@@ -73,6 +78,12 @@
 	      				<a href="#!" data-value="plane"><i class="fa fa-2x fa-plane" aria-hidden="true"></i></a>
 	      			</ul>
       			</div>
+      			<div id="DeparturePNR">
+      				<div class="input-field">
+      					<input type="text" name="pnrNo" placeholder="PNR No.">
+      				</div>
+      			</div>
+
       		</div>
       	</div>
       </div>
@@ -87,7 +98,7 @@
   <div id="notComming" class="">
 	<button class="btn btnBack">BACK</button>
 	<div class="row">
-		<center><h5>Why i'm not Comming?</h5></center>
+		<center><h5>Why i'm not Coming?</h5></center>
 	</div>  	
 	<div>
 		<div class="container">
@@ -104,7 +115,7 @@
 					<div class="input-field">
 						<div class="input-field col s12">
 				         	<textarea id="reasonFor" class="materialize-textarea"></textarea>
-           					<label for="last_name">I,m not Comming, Bcause...</label>
+           					<label for="last_name">I,m not Coming, Bcause...</label>
 				        </div>
 					</div>
 				</div>

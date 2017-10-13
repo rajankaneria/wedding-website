@@ -29,7 +29,7 @@ nav ul a{
             transform: translateY(0%);
         } 
         100% {
-            opacity: 0.9;
+            opacity: 1;
             transform: translateY(0);
         } 
     }
@@ -43,7 +43,7 @@ nav ul a{
       margin-top: 0;
       min-width: 100%;
       border-bottom:2px solid rgb(35, 40, 49);
-      opacity: .97;
+      opacity: 1;
       transition: opacity .5s ease-out;
       -webkit-transition: -webkit-transform .195s ease-in !important;
       transition: -webkit-transform .195s ease-in !important;
@@ -222,7 +222,7 @@ span.heart img {
 
 
 .family-area {
-    background: #313a4a;
+    background:#fff;
     margin-top: -20px;
 }
 
@@ -243,7 +243,7 @@ span.heart img {
     width: 100%;
     position: relative;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-    border: 5px solid #fff;
+    border: 5px solid #313a4a;
  }
 .wedding-title {
        color: #fff;
@@ -389,13 +389,13 @@ span.heart img {
     margin-top: 50px;
 }
 .container-fullwidth.title-container {
-    background-color: rgb(49, 58, 74);
+    background-color: rgb(255, 255, 255);
 }
 
 .title {
     text-align: center;
     font-size: 30px;
-    color: #fff;
+    color: #313a4a;
     padding-top: 50px;
     padding-bottom: 50px;
     letter-spacing: 2px;
@@ -528,13 +528,13 @@ span.heart img {
 
 
 div#bride-family {
-    background: #fff;
+    background: #313a4a;
 }
 div#bride-family .title{
-    color: rgb(49, 58, 74);
+    color: rgb(255, 255, 255);
 }
 div#bride-img-border img{
-    border: 5px solid rgb(49, 58, 74);
+    border: 5px solid rgb(255, 255, 255);
 }
 #bride-img-border{
     margin-top: -50px;
@@ -549,19 +549,26 @@ div#bride-img-border img{
 .developed-by {
     color: #6d6b6b;
     padding: 20px;
+    line-height: 50px;
 }
 
 .developed-by a {
     color: #fff;
 }
-
+.social-link.right {
+    display: inline-block;
+    margin-right: 25px;
+}
 .social-item {
-    float: right;
-    padding: 8px 13px;
-    background: #fff;
+    background: #d2ae6d;
     margin: 8px;
-    /* padding-left: 10px; */
+    float: left;
     border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
 }
 
 a.nav-menu {
@@ -748,6 +755,155 @@ div#RsvpDetails .row:last-child {
 }
 
 
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #394962;
+    -webkit-box-shadow: 0 1px 0 0 #394962;
+    box-shadow: 0 1px 0 0 #394962;
+}
+
+
+/*=========== Gallery ==============*/
+
+div#gallery .groom-img{
+    margin-bottom: 0px;
+}
+div#gallery .container-fullwidth {
+    background: #313a4a;
+}
+div#gallery{
+    background: #313a4a;
+    margin-bottom: -19px !important;
+}
+div#gallery .title{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.EventGallery {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    display: none;
+}
+.EventGallery-mobile{
+    display: none;
+}
+.active-gallery{
+    display: block;
+}
+
+ul#lightgallery {
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul#lightgallery li {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    padding: 10px;
+}
+ul#lightgallery li img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+
+.EventGallery ul li {
+
+}
+
+.eventButtons {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+.eventButtons a{
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.01);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.eventButtons a:hover,.eventButtons a:focus,.eventButtons a.active{
+    color: #313a4a;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 768px){
+    .cont.desktop-view-gallery{
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px){
+    .cont.mobile-view-gallery{
+        display: none;
+    }
+}
+
+/*Mobile Responisve gallery*/
+
+
+.eventButtons-mobile {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+.eventButtons-mobile a{
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.01);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.eventButtons-mobile a:hover,.eventButtons-mobile a:focus,.eventButtons-mobile a.active{
+    color: #313a4a;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/*=========== Footer ===============*/
+
+.footer{
+    margin-bottom: 0px;
+}
+
+.social-link {
+    text-align: right;
+}
+.social-link a {
+    color: rgba(255, 255, 255, 0.28);
+    margin: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.28);
+    padding: 5px;
+}
+.social-link a:hover {
+    color: #ddd;
+    margin: 10px;
+    border-bottom: 2px solid #ddd;
+    padding: 5px;
+}
+
 /*Media Mobile Resposive*/
 
 @media(max-width: 768px){
@@ -868,7 +1024,7 @@ div#RsvpDetails .row:last-child {
     #brideFamily-mobile{
         margin-top: -50px;
     }
-
+}
 
 
 
@@ -917,5 +1073,15 @@ div#RsvpDetails .row:last-child {
         .departureBy ul a:hover,.departureBy ul a:focus,.departureBy ul a:active{
             padding: 10px;
         }
+        .developed-by{
+            float: none !important;
+            text-align: center;
+        }
+        .social-link.col.s12.m6 {
+            text-align: center;
+            margin: 0 auto;
+            float: none;
+            width: 50%;
+        }
     }
-}
+

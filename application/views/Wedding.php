@@ -15,7 +15,7 @@
   </div>
   <div class="wedding-main-content">
     <div class="wedding-img"><img  src="<?php echo base_url(); ?>html/images/footer-img.png"></div>
-    <div class="wedding-title">Rishabh & Yesha</div>
+    <div class="wedding-title">Yesha & Rishabh</div>
     <div class="wedding-date">5th January, 2018</div>
   </div>
 </div>
@@ -72,29 +72,37 @@
 <div class="row wedding-white" id="couple">
 	<div class="section-title">HAPPY COUPLE</div>
 	<div class="happy-img">
-		<img src="<?php echo base_url(); ?>html/images/divider-img.png">
+		<img src="<?php echo base_url(); ?>html/images/divider-img-odd.png">
 	</div>
 
 
 	<div class="row couple-detail">
-		<div class="col m5 s12">
-			<div class="image-container"><img class="img1" src="<?php echo base_url(); ?>html/images/male.jpeg"></div>
-			<div class="couple-name">RISHABH <span>SHETH</span></div>
-			<div class="couple-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-		</div>
-		<div class="col m2 s12"><div class="heart-circle"><i class="fa fa-heart" aria-hidden="true"></i></div></div>
-		<div class="col m5 s12">
-			<div class="image-container"><img class="img1" src="<?php echo base_url(); ?>html/images/female.jpeg"></div>
-			<div class="couple-name">YESHA <span>KOTADIA</span></div>
-			<div class="couple-intro">Cras erat elit, dictum id bibendum nec, lacinia id tortor.</div>
+		
+    <div class="col m5 s12">
+      <div class="image-container">
+        <img class="img1" src="<?php echo base_url(); ?>html/images/female.jpeg">
+      </div>
+      <div class="couple-name">YESHA <span>KOTADIA</span></div>
+      <div class="couple-intro">Cras erat elit, dictum id bibendum nec, lacinia id tortor.</div>
+    </div>
+		<div class="col m2 s12">
+      <div class="heart-circle"><i class="fa fa-heart" aria-hidden="true"></i></div>
+    </div>
+    <div class="col m5 s12">
+      <div class="image-container">
+        <img class="img1" src="<?php echo base_url(); ?>html/images/male.jpeg">
+      </div>
+      <div class="couple-name">RISHABH <span>SHETH</span></div>
+      <div class="couple-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
 
-		</div>
+		
 	</div>
 
 </div>
 
 <div class="row event-row" id="program">
-	<div class="section-title">GROOM EVENTS</div>
+	<div class="section-title">BRIDE EVENTS</div>
 	<div class="groom-img">
 		<img src="<?php echo base_url(); ?>html/images/divider-img.png">
 	</div>
@@ -271,9 +279,9 @@
 
 <!--============================================bride==========================-->
 <div id="bride_event" class="row event-row">
-	<div class="section-title">BRIDE EVENTS</div>
+	<div class="section-title">GROOM EVENTS</div>
 	<div class="groom-img">
-		<img src="<?php echo base_url(); ?>html/images/divider-img.png">
+		<img src="<?php echo base_url(); ?>html/images/divider-img-odd.png">
 	</div>
 
 	<div class="event-list  hide-on-small-only hide-on-med-only show-on-large">
@@ -470,14 +478,132 @@
 
 
 
+<!-- Bride Family Member -->
 <div id="key_person"></div>
+<div class="container-fullwidth title-container" id="bride-family">
+  <div class="row title-row">
+    <div class="title">
+    BRIDE FAMILY & FRIENDS
+    </div>
+    <div class="groom-img">
+      <img src="http://localhost/wedding-website/html/images/divider-img.png">
+    </div>
+  </div>
+
+ <div id="bride-img-border" class="row family-row hide-on-small-only hide-on-med-only show-on-large">
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
+         </div>
+         <!-- <div class="row relation">
+         <div class="family-name">
+           rajeev dahiya
+         </div>
+         <div class="family-desination">
+          father
+         </div>
+       </div> -->
+      </div>
+
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
+      </div>
+      <!-- <div class="row relation">
+      <div class="family-name">
+           jaheel dahiya
+         </div>
+         <div class="family-desination">
+          mother
+         </div>
+      </div> -->
+    </div>
+
+    <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
+      </div>
+      <!-- <div class="row relation">
+      <div class="family-name">
+           jaheel dahiya
+         </div>
+         <div class="family-desination">
+          mother
+         </div>
+      </div> -->
+    </div>
+    
+    </div>
+
+
+<!-- Bride Family Member Mobile Responsive -->
+
+  <div id="brideFamily-mobile" class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
+    <div class="carousel-item card-panel white-text" href="#one!">
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
+         </div>
+         <!-- <div class="row relation">
+           <div class="family-name">
+             rajeev dahiya
+           </div>
+           <div class="family-desination">
+            father
+           </div>
+         </div> -->
+      </div>
+    </div>
+
+    <div class="carousel-item card-panel white-text" href="#two!">
+       <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
+      </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>  
+    </div>
+
+    <div class="carousel-item card-panel white-text" href="#three!">
+       <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
+      </div>
+      <!-- <div class="row relation">
+        <div class="family-name">
+             jaheel dahiya
+           </div>
+           <div class="family-desination">
+            mother
+           </div>
+        </div> -->
+      </div>  
+    </div>
+  </div>
+</div>
+  <!-- Over Bride Family Responsive -->
+
+
+
+
+
+
+
+
   <div class="container-fullwidth title-container" >
   	<div class="row title-row">
   		<div class="title">
   			GROOM FAMILY & FRIENDS
   		</div>
       <div class="groom-img">
-        <img src="http://localhost/wedding-website/html/images/divider-img.png">
+        <img src="<?php echo base_url(); ?>html/images/divider-img-odd.png">
       </div>
   	</div>
  </div>
@@ -674,132 +800,228 @@
 <!-- Over hide Resposnive family Member -->
 
 
-<!-- Bride Family Member -->
-<div id="gallery"></div>
-<div class="container-fullwidth title-container" id="bride-family">
-	<div class="row title-row">
-		<div class="title">
-		BRIDE FAMILY & FRIENDS
-		</div>
-    <div class="groom-img">
-      <img src="http://localhost/wedding-website/html/images/divider-img.png">
+
+
+<!--================ Gallery ================-->
+<div id="gallery">
+  <div class="container-fullwidth title-container" >
+    <div class="row title-row">
+      <div class="title">
+        Events Gallery
+      </div>
+      <div class="groom-img">
+        <img src="http://localhost/wedding-website/html/images/divider-img.png">
+      </div>
     </div>
-	</div>
+ </div>
+ 
+ <div class="row">
+  <!-- Desktop Gallery -->
+  <div class="cont desktop-view-gallery">
+ <!--  <div class="page-head">
+    <h1>jQuery lightgallery</h1>
+    <p class="lead">A lightweight, customizable, modular, responsive, lightbox gallery plugin for jQuery.</p><a href="https://github.com/sachinchoolur/lightGallery" class="btn btn-primary btn-lg">View on github</a></div> -->
+<div class="row eventButtons">
+  <ul>
+    <a href="#!" id="lunch" class="eventBtn active">Lunch</a>
+    <a href="#!" id="carnivalOfLove" class="eventBtn">Carnival Of Love</a>
+    <a href="#!" id="sangeet" class="eventBtn">Sangeet</a>
+  </ul>
 </div>
- <div id="bride-img-border" class="row family-row hide-on-small-only hide-on-med-only show-on-large">
-  		<div class="col m3 s12">
-  			<div class="family-img">
-  			<img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
-  		   </div>
-         <!-- <div class="row relation">
-  		   <div class="family-name">
-  		   	 rajeev dahiya
-  		   </div>
-  		   <div class="family-desination">
-  		   	father
-  		   </div>
-       </div> -->
-  		</div>
 
-  		<div class="col m3 s12">
-  			<div class="family-img">
-  			<img  src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
-  		</div>
-      <!-- <div class="row relation">
-  		<div class="family-name">
-  		   	 jaheel dahiya
-  		   </div>
-  		   <div class="family-desination">
-  		   	mother
-  		   </div>
-  		</div> -->
+  <div class="EventGallery active-gallery" id="lunch-box">
+    <ul id="lightgallery">
+     <!--  <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
+      data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
+        <a href="">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
+          <div class="demo-gallery-poster">
+            <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+          </div>
+        </a>
+      </li> -->
+      <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/2-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+      data-sub-html="<h4>Sangeet</h4>">
+        <a href="#!">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-2.jpg">
+        </a>
+      </li>
+
+
+       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
+      data-sub-html="<h4>Sunset Serenity</h4>">
+        <a href="">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        </a>
+      </li>
+    </ul>
     </div>
 
-    <div class="col m3 s12">
-        <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
-      </div>
-      <!-- <div class="row relation">
-      <div class="family-name">
-           jaheel dahiya
-         </div>
-         <div class="family-desination">
-          mother
-         </div>
-      </div> -->
-    </div>
-    
-  	</div>
+    <!-- Lunch -->
 
+     <div class="EventGallery" id="carnivalOfLove-box">
+    <ul id="lightgallery">
+     <!--  <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
+      data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
+        <a href="">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
+          <div class="demo-gallery-poster">
+            <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+          </div>
+        </a>
+      </li> -->
+     
 
-<!-- Bride Family Member Mobile Responsive -->
-
-  <div id="brideFamily-mobile" class="carousel hide-on-large-only carousel-slider center" data-indicators="true">
-    <div class="carousel-item card-panel white-text" href="#one!">
-      <div class="col m3 s12">
-        <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
-         </div>
-         <!-- <div class="row relation">
-           <div class="family-name">
-             rajeev dahiya
-           </div>
-           <div class="family-desination">
-            father
-           </div>
-         </div> -->
-      </div>
+ 
+       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
+      data-sub-html="<h4>Sunset Serenity</h4>">
+        <a href="">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        </a>
+      </li>
+    </ul>
     </div>
 
-    <div class="carousel-item card-panel white-text" href="#two!">
-       <div class="col m3 s12">
-        <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
-      </div>
-      <!-- <div class="row relation">
-        <div class="family-name">
-             jaheel dahiya
-           </div>
-           <div class="family-desination">
-            mother
-           </div>
-        </div> -->
-      </div>  
-    </div>
+    <div class="EventGallery" id="sangeet-box">
+    <ul id="lightgallery">
+     <!--  <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
+      data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
+        <a href="">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
+          <div class="demo-gallery-poster">
+            <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+          </div>
+        </a>
+      </li> -->
+     
 
-    <div class="carousel-item card-panel white-text" href="#three!">
-       <div class="col m3 s12">
-        <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
-      </div>
-      <!-- <div class="row relation">
-        <div class="family-name">
-             jaheel dahiya
-           </div>
-           <div class="family-desination">
-            mother
-           </div>
-        </div> -->
-      </div>  
+      <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
+      data-sub-html="<h4>Sunset Serenity</h4>">
+        <a href="">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        </a>
+      </li>
+
+      <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/4-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/4-1600.jpg"
+      data-sub-html="<h4>Coniston Calmness</h4>">
+        <a href="">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-4.jpg">
+        </a>
+      </li>
+
+       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
+      data-sub-html="<h4>Sunset Serenity</h4>">
+        <a href="">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        </a>
+      </li>
+    </ul>
     </div>
+</div>
+
+
+  <!-- Mobile Responisve Gallery -->
+
+   <div class="cont mobile-view-gallery">
+ <!--  <div class="page-head">
+    <h1>jQuery lightgallery</h1>
+    <p class="lead">A lightweight, customizable, modular, responsive, lightbox gallery plugin for jQuery.</p><a href="https://github.com/sachinchoolur/lightGallery" class="btn btn-primary btn-lg">View on github</a></div> -->
+  <div class="row eventButtons-mobile">
+    <ul>
+      <a href="#!" id="lunch-m" class="eventBtn active">Lunch</a>
+      <a href="#!" id="carnivalOfLove-m" class="eventBtn">Carnival Of Love</a>
+      <a href="#!" id="sangeet-m" class="eventBtn">Sangeet</a>
+    </ul>
   </div>
 
-  <!-- Over Bride Family Responsive -->
+  <div class="EventGallery-mobile carousel carousel-slider center" data-indicators="true" id="lunch-m-box-mobile">
+    <ul id="lightgallery">
+     <!--  <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
+      data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
+        <a href="">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
+          <div class="demo-gallery-poster">
+            <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+          </div>
+        </a>
+      </li> -->
+      <div class="carousel-item" href="#one!">
+        <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/2-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+        data-sub-html="<h4>Sangeet</h4>">
+          <a href="#!">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-2.jpg">
+          </a>
+        </li>
+      </div>
+
+      <!-- <div class="carousel-item red white-text" href="#one!">
+       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg" data-sub-html="<h4>Sunset Serenity</h4>">
+        <a href="">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        </a>
+      </li>
+      </div> -->
+    </ul>
+    </div>
+
+    <!-- Mobile Lunch -->
+
+    <div class="EventGallery-mobile active-gallery carousel carousel-slider center" data-indicators="true" id="carnivalOfLove-m-box-mobile">
+    <ul id="lightgallery">
+     <!--  <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
+      data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
+        <a href="">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
+          <div class="demo-gallery-poster">
+            <img src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
+          </div>
+        </a>
+      </li> -->
+      <div class="carousel-item" href="#one!">
+        <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/2-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+        data-sub-html="<h4>Sangeet</h4>">
+          <a href="#!">
+          <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-2.jpg">
+          </a>
+        </li>
+      </div>
+
+      <div class="carousel-item" href="#two!">
+       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg" data-sub-html="<h4>Sunset Serenity</h4>">
+        <a href="">
+        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        </a>
+      </li>
+      </div>
+    </ul>
+    </div>
+   
+
+  </div>
+<!-- Over Mobile gallery Here-->
+
+</div>
+</div>
+
+
+
 
 
 <div class="container-fullwidth last">
   	<div class="wedding-last-content">
   		<div class="wedding-last-img"><img  src="<?php echo base_url(); ?>html/images/footer-img.png"></div>
-		<div class="wedding-last-title">Rishabh & Yesha</div>
+		<div class="wedding-last-title">Yesha & Rishabh</div>
 		<div class="wedding-last-date">5th January, 2018</div>
 	</div>
 </div>
-<div class="container-fullwidth footer">
-  	<div class="developed-by left">Developed by <a href="http://intelliworkz.com">Intelliworkz</a></div>
-  	<div class="social-link right">
-  		<div class="social-item"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-  		<div class="social-item"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-  		<div class="social-item"><i class="fa fa-google" aria-hidden="true"></i></div>
+<div class="container-fullwidth footer row">
+  	<div class="developed-by col s12 m6">Developed by <a href="http://intelliworkz.com">Intelliworkz</a></div>
+  	<div class="social-link col s12 m6">
+      <ul>
+    		<a ><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    		<a ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    		<a ><i class="fa fa-google" aria-hidden="true"></i></a>
+      </ul>  
   	</div>
 </div>
 

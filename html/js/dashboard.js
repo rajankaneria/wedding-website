@@ -127,7 +127,10 @@ $('.button-collapse').sideNav({
 	 	$("#"+Mgallery+'-box-mobile').addClass('active-gallery');
 	});
     
-	
+
+	/*Multiple Select Box*/
+
+	 $('select').material_select();
 
 });
 

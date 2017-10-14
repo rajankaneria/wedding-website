@@ -1,6 +1,6 @@
 <div class="row" id="home">
   <div class="bg-img">
-    <img src="<?php echo base_url() ?>html/images/profile-bg.jpg">
+    <img src="<?php echo base_url() ?>html/images/background-tile.png">
   </div>
   <div class="container">
   <div class="row profile-area">

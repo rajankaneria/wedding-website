@@ -1028,12 +1028,20 @@ ul#lightgallery li img {
         left: 0;
         margin-left: 0;
     }
+    .bg-img {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        height: auto;
+    }
     .bg-img img {
         position: relative;
         z-index: -1;
         overflow-x: hidden;
-        /*min-height: 360px;*/
-        width: auto;
+        width: auto !important;
+        height: 100% !important;
     }
     .heart-circle {
         text-align: center;
@@ -1140,6 +1148,28 @@ ul#lightgallery li img {
     /*========== RSVP AREA ============*/
 
     @media(max-width: 768px){
+
+        #home .bg-img img {
+            width: auto !important;
+            height: 100% !important;
+            position: relative;
+        }
+
+        nav .nav-wrapper {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .side-nav {
+            text-align: left;
+            background: rgb(30, 37, 49);
+            color: #fff;
+        }
+        .side-nav li>a{
+            color: #fff;
+        }
         
         div#areYouComming{
             width: 100%;

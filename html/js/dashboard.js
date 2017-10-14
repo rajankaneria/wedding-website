@@ -1,6 +1,32 @@
 //$('.carousel.carousel-slider').carousel({fullWidth: true});
 $(function(){
 
+
+
+	/*HOW WE MET*/
+
+	$('#img-top').on("mouseover", function(e){
+		$('#how-we-met-content').slideDown();
+		/*setInterval(howWeMet, 5000);*/
+	});
+
+	$('#img-top').on("click", function(e){
+		$('#how-we-met-content').slideDown();
+		/*setInterval(howWeMet, 5000);*/
+	});
+
+	$('#img-top').on("mouseleave", function() {
+	   $('#how-we-met-content').slideUp();
+	});
+
+	/*function howWeMet(){
+		$('#how-we-met-content').slideUp();
+	}
+*/
+	/*setInterval(myTimer, 1000);*/
+
+
+
 $('.modal').modal();
 
 /*===== Date Initialization =======*/
@@ -97,7 +123,7 @@ $('.button-collapse').sideNav({
 	/*============ RSVP Form ===========================*/
 
 	/*============ Gallery ===================*/
-	  $('#lightgallery').lightGallery({
+	  $('.EventGallery #lightgallery').lightGallery({
 	    pager: true
 	  });
 

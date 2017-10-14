@@ -7,7 +7,7 @@
 
       <div class="row" id="GuestId">
       	<div class="container">
-      		<div class="row"><button class="btn btnBack" id="btnBackAreYouComing">BACK</button></div>
+      		<!-- <div class="row"></div> -->
       		<center><h5>Welcome Guest,</h5></center>
       		<div>
       			<form>
@@ -19,6 +19,7 @@
       				</div>
       				<div class="btn-area">
       					<center>
+      						<button class="btn btnBack" id="btnBackAreYouComing">BACK</button>
       						<input type="button" name="" value="Next" class="btn btnGuestId" id="btnGuestId">
       					</center>
       				</div>
@@ -31,7 +32,6 @@
 
       <div class="row" id="GuestOTP">
       	<div class="container">
-      		<button class="btn btnBack" id="btnGuestOtp">BACK</button>
       		<center><h5>Enter OTP</h5></center>
       		<div>
       			<form>
@@ -40,6 +40,7 @@
       				</div>
       				<div class="btn-area">
       					<center>
+      						<button class="btn btnBack" id="btnGuestOtp">BACK</button>
       						<input type="button" name="" value="Next" class="btn btnGuestId" id="GuestOtp">
       					</center>
       				</div>
@@ -51,7 +52,6 @@
 
       <div class="row" id="selectSide">
       	<div class="container">
-      		<button class="btn btnBack" id="btnBackSelectSide">BACK</button>
       		<center><h5>Select Side </h5></center>
       		<div class="row" id="activePerson">
       				<div class="slectSide-img-area" id="brideSide">
@@ -70,7 +70,10 @@
       				</div>
       			</div>
   			<div class="btn-area">
-  					<center><input type="button" name="" class="btn btnSelectSide" id="btnSelectSide" value="Next"></center>
+  					<center>
+  						<button class="btn btnBack" id="btnBackSelectSide">BACK</button>
+  						<input type="button" name="" class="btn btnSelectSide" id="btnSelectSide" value="Next">
+  					</center>
   				</div>
       	</div>
       </div>
@@ -88,9 +91,7 @@
       </div>
 	
 	<div class="" id="RsvpDetails">
-		<button class="btn btnBack" id="btnBackRsvp">BACK</button>
-      <div class="row">
-      	
+	  <div class="row">
       	<div class="col s12 m5"> <h5>How Many Guests?</h5></div>
       	<div class="guestNumber col s12 m7">
       		<ul>
@@ -177,14 +178,16 @@
       </div>
 
       <div class="row input-field">
-      	<center><button class="btn btn-submit" id="yesSubmitBtn">Submit</button></center>
+      	<center>
+      		<button class="btn btnBack" id="btnBackRsvp">BACK</button>
+      		<button class="btn btn-submit modal-action modal-close" id="yesSubmitBtn">Submit</button>
+      	</center>
       </div>
 
   </div>
 
 <!-- Not Coming are -->
   <div id="notComming" class="">
-	<button class="btn btnBack" id="btnNotComing">BACK</button>
 	<div class="row">
 		<center><h5>Why i'm not Coming?</h5></center>
 	</div>  	
@@ -210,7 +213,10 @@
 
 				<div class="row">
 					<div class="input-field">
-						<button type="button" class="btn btn-submit" id="noSubmit-btn"> Submit</button>
+						<center>
+						<button class="btn btnBack" id="btnNotComing">BACK</button>
+						<button type="button" class="btn btn-submit modal-action modal-close" id="noSubmit-btn"> Submit</button>
+						</center>
 					</div>
 				</div>
 			</form>
@@ -218,16 +224,46 @@
 	</div>
 
   </div>
-
-    </div>
+  </div>
    <!--  <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
     </div> -->
   </div>
 
 
+<!-- WHISHES Modal -->
+<div id="whisheModal" class="modal">
+    <div class="modal-content">
+	  	<div id="thankUforWhishes">
+	  		<div class="container center">
+	  			<img src="<?php echo base_url(); ?>html/images/best-whishes.jpg" class="responsive-img">
+	  		</div>
+	  	</div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+<!-- yesSubmitBtn -->
+
+
 <script type="text/javascript">
 	$(function(){
+
+
+		$("#noSubmit-btn").on("click",function(){
+			$("#areYouComming").show();
+			$("#whisheModal").modal("open");
+		});
+
+		$("#yesSubmitBtn").on("click", function(){
+			$("#areYouComming").show();
+			$("#whisheModal").modal("open");
+		});
+
+		 $('.modal').modal();
+
 		$("#yesSubmitBtn").on("click",function(){
 			rsvpYes();
 		});
@@ -333,6 +369,15 @@
 			$('#RsvpDetails').hide();
 			$('#notComming').hide();
 		});*/
+
+
+		/*Not Comming DialogBox*/
+
+		$('#noSubmit-btn').click(function(){
+			$('#notComming').hide();
+			$('#thankUforWhishes').fadeIn(700);
+
+		});
 
 		$('#bestWhises').val('');
 		  $('#bestWhises').trigger('autoresize');

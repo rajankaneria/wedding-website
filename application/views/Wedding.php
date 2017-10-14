@@ -99,6 +99,22 @@
 		
 	</div>
 
+  <div class="how-we-met-area" id="img-top">
+      <div class="row center metTop" >
+        <img src="<?php echo base_url();?>html/images/howWeMet-top.png" class="responsive-img">
+        <!-- <h5>HOW WE MET</h5> -->
+      </div>
+      <div id="how-we-met-content">
+        <p>
+          It all started when Yesha and Rishabh discovered that they could be in a relationship where they can act like lovers and best friends at the same time. They have come a long way. Challenging the uncertainty of their opposing personalities and the nature of their thoughts made them curious in love! Bringing them on the same page of their beautiful journey was initiated by a goofy cupid hidden amongst them- not so chotu-choti. After a couple trysts, spellbound by Yesha's innocence and Rishabh's charm, both of them felt the spark, the kind that they wanted to explore further. Being so different from each other, yet it's almost as if a puzzle fits. It's rightly said, "we need not think alike to love alike". Eventually when they realized that there was a lot more going on between them other than just friendship, they started unraveling the mystery of togetherness. Eventually becoming each other's biggest fan and the toughest adversary they decided to give their hand and heart to each other and bond the families eternally. Everyone around wondered the same thing- how is this happening so fast? The only fitting answer they could provide is that "This feels like home and this is the person I want to be with."  And that's how we all know that the beautiful bride Yesha and the dapper groom Rishabh signed up for a lifetime of legit fun and frolic!
+        </p>
+      </div> 
+      <div class="row center" id="img-top">
+        <img src="<?php echo base_url();?>html/images/howWeMet-bottom.png" class="responsive-img">
+        <!-- <h5>HOW WE MET</h5> -->
+      </div>
+  </div>
+
 </div>
 
 <div class="row event-row" id="program">

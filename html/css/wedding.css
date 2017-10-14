@@ -1032,7 +1032,8 @@ ul#lightgallery li img {
         position: relative;
         z-index: -1;
         overflow-x: hidden;
-        min-height: 360px;
+        /*min-height: 360px;*/
+        width: auto;
     }
     .heart-circle {
         text-align: center;

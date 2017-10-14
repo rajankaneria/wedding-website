@@ -486,7 +486,7 @@
     BRIDE FAMILY & FRIENDS
     </div>
     <div class="groom-img">
-      <img src="http://localhost/wedding-website/html/images/divider-img.png">
+      <img src="<?php echo base_url(); ?>html/images/divider-img.png">
     </div>
   </div>
 
@@ -810,7 +810,7 @@
         Events Gallery
       </div>
       <div class="groom-img">
-        <img src="http://localhost/wedding-website/html/images/divider-img.png">
+        <img src="<?php echo base_url(); ?>html/images/divider-img.png">
       </div>
     </div>
  </div>

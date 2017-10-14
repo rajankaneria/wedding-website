@@ -1171,6 +1171,15 @@ ul#lightgallery li img {
             color: #fff;
         }
         
+
+        .slectSide-img-area {
+            width: 50%;
+            display: block;
+            float: left;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
         div#areYouComming{
             width: 100%;
             padding: 0px;

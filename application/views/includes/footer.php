@@ -305,7 +305,7 @@
 		
 		/*are u Comimg*/
 		$('#btnBackAreYouComing').click(function(){
-			$('#areYouComming').hide();
+			$('#GuestId').hide();
 			$('#areYouComming').show();
 		});
 

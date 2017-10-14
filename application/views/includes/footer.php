@@ -232,7 +232,7 @@
 
 
 <!-- WHISHES Modal -->
-<div id="whisheModal" class="modal">
+<div id="whisheModal" class="modal whishMdalYes">
     <div class="modal-content">
 	  	<div id="thankUforWhishes">
 	  		<div class="container center">
@@ -241,7 +241,7 @@
 	  	</div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="closModal">Close</a>
     </div>
   </div>
 
@@ -259,7 +259,15 @@
 
 		$("#yesSubmitBtn").on("click", function(){
 			$("#areYouComming").show();
-			$("#whisheModal").modal("open");
+			$('#thankUforWhishes').css('display','block');
+			$(".whishMdalYes").modal("open");
+		});
+
+		$('#closModal').on("click", function(){
+			$('#areYouComming').show();
+			$('#thankUforWhishes').hide();
+			$('#RsvpDetails').hide();
+			$("#whisheModal").modal('close');
 		});
 
 		 $('.modal').modal();

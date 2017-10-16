@@ -1,4 +1,4 @@
-<div class="row" id="home">
+<div class="row" id="home" style="margin-bottom: 0px;">
   <div class="bg-img">
     <img src="<?php echo base_url() ?>html/images/background-tile.png">
   </div>
@@ -15,7 +15,7 @@
   </div>
   <div class="wedding-main-content row">
     <div class="col s12 m4 date-top">
-        <h6>Date :</h6>
+        <h6>: Date :</h6>
         <div class="top-date">5th January, 2018</div>      
     </div>
     <div class="col s12 m4">
@@ -24,7 +24,7 @@
       <div class="wedding-img2"><img  src="<?php echo base_url(); ?>html/images/footer-img.png"></div>
     </div>
     <div class="col s12 m4 venue-top">
-      <h6>Venue :</h6>
+      <h6>: Venue :</h6>
       <div class="top-venue">Kensville Golf & Country Club, Ahmedabad. </div>
     </div>  
     <!-- <div class="wedding-date">5th January, 2018</div> -->
@@ -83,7 +83,7 @@
 <div class="row wedding-white" id="couple">
 	<div class="section-title"></div>
 	<div class="happy-img">
-    <img src="<?php echo base_url(); ?>html/images/ttl-hpy-couple.png" class="responsive-img">
+    <img src="<?php echo base_url(); ?>html/images/ttl-soulmates.png" class="responsive-img">
 		<!-- <img src="<?php //echo base_url(); ?>html/images/divider-img-odd.png"> -->
 	</div>
 
@@ -95,7 +95,7 @@
         <img class="img1" src="<?php echo base_url(); ?>html/images/female.jpeg">
       </div>
       <div class="couple-name">YESHA <span>KOTADIA</span></div>
-      <div class="couple-intro">About bride: Yesha Kotadia, is a 25 year old zealous woman. Her strength comes from her family and friends. She is very passionate and always on her toes about her work and helping people but prefers a late lazy sunday with movies and snuggles. She has a whole different nervous system when it comes to dancing, that operates on its individual capacity.</div>
+      <div class="couple-intro">Yesha Kotadia, is a 25 year old zealous woman. Her strength comes from her family and friends. She is very passionate and always on her toes about her work and helping people but prefers a late lazy sunday with movies and snuggles. She has a whole different nervous system when it comes to dancing, that operates on its individual capacity.</div>
     </div>
 		<div class="col m2 s12">
       <div class="heart-circle"><i class="fa fa-heart" aria-hidden="true"></i></div>
@@ -112,9 +112,9 @@
 	</div>
 
   <div class="how-we-met-area" id="img-top">
-      <div class="row center metTop" >
+      <div class="row center metTop how-we-met-img">
         <img src="<?php echo base_url();?>html/images/howWeMet-top.png" class="responsive-img">
-        <!-- <h5>HOW WE MET</h5> -->
+        <!-- <h5 class="hwm-title">How we <span>Met</span></h5> -->
       </div>
       <div id="how-we-met-content">
         <p>
@@ -122,45 +122,46 @@
         </p>
       </div> 
       <div class="row center" id="img-top">
-        <img src="<?php echo base_url();?>html/images/howWeMet-bottom.png" class="responsive-img">
+        <!-- <img src="<?php // echo base_url();?>html/images/howWeMet-bottom.png" class="responsive-img"> -->
         <!-- <h5>HOW WE MET</h5> -->
       </div>
   </div>
 
 </div>
 
+
+<!-- bride functions start here -->
+
+
 <div class="row event-row" id="program">
 	<div class="section-title"></div>
 	<div class="groom-img">
-    <img src="<?php echo base_url(); ?>html/images/tt-BRIDE FUNCTIONS.png" class="responsive-img">
+    <img src="<?php echo base_url(); ?>html/images/ttl-brideFunction.png" class="responsive-img">
 		<!-- <img src="<?php// echo base_url(); ?>html/images/divider-img.png"> -->
 	</div>
 
 	<div class="event-list hide-on-small-only hide-on-med-only show-on-large">
-		    <div class="col s12 m4">
-
+        
+        <div class="col s12 m4">
         <div class="event-time-container">
-        	<div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
         	<div class="time-details">
         		<div class="time-date">4TH JANUARY- 2018</div>
         		<div class="time-time">11:00 AM</div>
         	</div>
         </div>
-
 		<div class="event-location-container">
         	<div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        	<div class="location-details">Kensville Golf &amp; Country Club, Dev Dholera Village, Nal Sarovar Rd, Dist. Ahmedabad (Gujarat) India.</div>
+        	<div class="location-details">Kensville Golf &amp; Country Club.</div>
         </div>
 
-
-        <div class="event-name-container">
+ <div class="event-name-container">
         	<div class="name-image-container">
-        		<img class="img1" src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        		<img class="img1" src="<?php  echo base_url(); ?>html/images/check in.png">
         	</div>
-        	<div class="name-details">Check-in & lunch</div>
+        	<div class="name-details">Check In & lunch</div>
         </div>
-
-
+ 
       </div>
 
 
@@ -179,13 +180,13 @@
 
 		<div class="event-location-container">
         	<div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        	<div class="location-details">Kensville Golf &amp; Country Club, Dev Dholera Village, Nal Sarovar Rd, Dist. Ahmedabad (Gujarat) India.</div>
+        	<div class="location-details">Kensville Golf &amp; Country Club.</div>
         </div>
 
 
         <div class="event-name-container">
         	<div class="name-image-container">
-        		<img class="img1" src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        		<img class="img1" src="<?php echo base_url(); ?>html/images/carnival of love.jpg">
         	</div>
         	<div class="name-details">Carnival of love</div>
         </div>
@@ -200,25 +201,126 @@
         	<div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
         	<div class="time-details">
         		<div class="time-date">4TH JANUARY- 2018</div>
-        		<div class="time-time">7:30 PM</div>
+        		<div class="time-time">07:30 PM</div>
         	</div>
         </div>
 
 		<div class="event-location-container">
         	<div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        	<div class="location-details">Kensville Golf &amp; Country Club, Dev Dholera Village, Nal Sarovar Rd, Dist. Ahmedabad (Gujarat) India.</div>
+        	<div class="location-details">Kensville Golf &amp; Country Club.</div>
         </div>
 
 
         <div class="event-name-container">
         	<div class="name-image-container">
-        		<img class="img1" src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        		<img class="img1" src="<?php echo base_url(); ?>html/images/sangeet.jpg">
         	</div>
         	<div class="name-details">Sangeet Sandhya</div>
         </div>
 
 
       </div>
+
+      <!---====================card 4=========================-->
+        <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">5th JANUARY- 2018</div>
+            <div class="time-time">08:00 AM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php echo base_url(); ?>html/images/mandap murhat.jpg">
+          </div>
+          <div class="name-details" style="    line-height: 20px;
+    padding-top: 0px;
+    margin-top: 15px;
+    padding-bottom: 0px;">Ganesh Sthapan, Mandap, Mamera</div>
+        </div>
+    </div>
+
+    <!---====================card 5=========================-->
+        <!-- <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">5th JANUARY- 2018</div>
+            <div class="time-time">03:30 PM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php // echo base_url(); ?>html/images/namaste.jpg">
+          </div>
+          <div class="name-details">Wedding Procession</div>
+        </div>
+    </div> -->
+
+    <!---====================card 6=========================-->
+        <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">5th JANUARY- 2018</div>
+            <div class="time-time">05:30 PM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php echo base_url(); ?>html/images/hast melap.jpg">
+          </div>
+          <div class="name-details">Hast Melap</div>
+        </div>
+    </div>
+
+    <!---====================card 7=========================-->
+        <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">6th JANUARY- 2018</div>
+            <div class="time-time">10:00 AM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php echo base_url(); ?>html/images/check out.png">
+          </div>
+          <div class="name-details">Check out</div>
+        </div>
+    </div>
+
+
 	</div>
 
 
@@ -310,7 +412,7 @@
 <div id="bride_event" class="row event-row">
 	<div class="section-title"></div>
 	<div class="groom-img">
-    <img src="<?php echo base_url(); ?>html/images/ttl-GROOM FUNCTIONS.png" class="responsive-img">
+    <img src="<?php echo base_url(); ?>html/images/ttl-groomFunction.png" class="responsive-img">
 		<!-- <img src="<?php // echo base_url(); ?>html/images/divider-img-odd.png"> -->
 	</div>
 
@@ -327,15 +429,15 @@
 
 		<div class="event-location-container">
         	<div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        	<div class="location-details">Kensville Golf & Country Club, Dev Dholera Village, Nal Sarovar Rd, Dist. Ahmedabad </div>
+        	<div class="location-details">Kensville Golf & Country Club.</div>
         </div>
 
 
         <div class="event-name-container">
         	<div class="name-image-container">
-        		<img class="img1" src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        		<img class="img1" src="<?php echo base_url(); ?>html/images/check in.png">
         	</div>
-        	<div class="name-details">Check-in & lunch</div>
+        	<div class="name-details">Check In & lunch</div>
         </div>
 
 
@@ -357,13 +459,13 @@
 
 		<div class="event-location-container">
         	<div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        	<div class="location-details">Kensville Golf & Country Club, Dev Dholera Village, Nal Sarovar Rd, Dist. Ahmedabad </div>
+        	<div class="location-details">Kensville Golf & Country Club.</div>
         </div>
 
 
         <div class="event-name-container">
         	<div class="name-image-container">
-        		<img class="img1" src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        		<img class="img1" src="<?php echo base_url(); ?>html/images/carnival of love.jpg">
         	</div>
         	<div class="name-details">Carnival of love</div>
         </div>
@@ -384,19 +486,123 @@
 
 		<div class="event-location-container">
         	<div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        	<div class="location-details">Kensville Golf & Country Club, Dev Dholera Village, Nal Sarovar Rd, Dist. Ahmedabad </div>
+        	<div class="location-details">Kensville Golf & Country Club.</div>
         </div>
 
 
         <div class="event-name-container">
         	<div class="name-image-container">
-        		<img class="img1" src="<?php echo base_url(); ?>html/images/namaste.jpg">
+        		<img class="img1" src="<?php echo base_url(); ?>html/images/sangeet.jpg">
         	</div>
         	<div class="name-details">Sangeet Sandhya</div>
         </div>
 
 
       </div>
+
+      <!-- !---====================card 4=========================-->
+        <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">5th JANUARY- 2018</div>
+            <div class="time-time">08:00 AM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php echo base_url(); ?>html/images/mandap murhat.jpg">
+          </div>
+          <div class="name-details" style="    line-height: 20px;
+    padding-top: 0px;
+    margin-top: 15px;
+    padding-bottom: 0px;">Ganesh Sthapan, Mandap, Pithi</div>
+        </div>
+    </div>
+
+    <!---====================card 5=========================-->
+        <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">5th JANUARY- 2018</div>
+            <div class="time-time">03:30 PM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php // echo base_url(); ?>html/images/wedding procession.png">
+          </div>
+          <div class="name-details" style="margin: 0;line-height: 15px;">Wedding Procession</div>
+        </div>
+    </div>
+
+    <!---====================card 6=========================-->
+        <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">5th JANUARY- 2018</div>
+            <div class="time-time">05:30 PM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php echo base_url(); ?>html/images/hast melap.jpg">
+          </div>
+          <div class="name-details">Hast Melap</div>
+        </div>
+    </div>
+
+    <!---====================card 7=========================-->
+        <div class="col s12 m4">
+
+        <div class="event-time-container">
+          <div class="time-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <div class="time-details">
+            <div class="time-date">6th JANUARY- 2018</div>
+            <div class="time-time">10:00 AM</div>
+          </div>
+        </div>
+
+        <div class="event-location-container">
+          <div class="location-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="location-details">Kensville Golf &amp; Country Club.</div>
+        </div>
+
+        <div class="event-name-container">
+          <div class="name-image-container">
+            <img class="img1" src="<?php echo base_url(); ?>html/images/check out.png">
+          </div>
+          <div class="name-details">Check Out</div>
+        </div>
+    </div>
+
+
+
+
+
 	</div>
 
   <!-- Bride Mobile responisve -->
@@ -512,18 +718,18 @@
 <div id="key_person"></div>
 <div class="container-fullwidth title-container" id="bride-family">
   <div class="row title-row">
-    <div class="title">
-    BRIDE FAMILY
+    <div style="padding-top:  25px">
+    
     </div>
     <div class="groom-img">
-      <img src="<?php echo base_url(); ?>html/images/divider-img.png">
+      <img src="<?php echo base_url(); ?>html/images/ttl-brideFamily.png">
     </div>
   </div>
 
  <div id="bride-img-border" class="row family-row hide-on-small-only hide-on-med-only show-on-large">
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <img  src="<?php echo base_url(); ?>html/images/G-F-1.jpg">
           <div class="row relation">
            <div class="family-name">
             Ratilal Kotadia
@@ -537,7 +743,7 @@
 
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <img  src="<?php echo base_url(); ?>html/images/G-F-2.jpg">
          <div class="row relation">
         <div class="family-name">
             Sulochana Kotadia
@@ -551,7 +757,7 @@
 
     <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <img  src="<?php echo base_url(); ?>html/images/G-F-3.jpg">
          <div class="row relation">
           <div class="family-name">
             Snehal Kotadia
@@ -566,7 +772,7 @@
 
     <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <img  src="<?php echo base_url(); ?>html/images/G-F-4.jpg">
          <div class="row relation">
         <div class="family-name">
             Alpa Kotadia
@@ -581,7 +787,7 @@
     
     <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <img  src="<?php echo base_url(); ?>html/images/G-F-5.jpg">
         <div class="row relation">
         <div class="family-name">
             Rimal Kotadia
@@ -602,16 +808,16 @@
     <div class="carousel-item card-panel white-text" href="#one!">
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
-         </div>
-         <!-- <div class="row relation">
+        <img  src="<?php echo base_url(); ?>html/images/G-F-1.jpg">
+          <div class="row relation">
            <div class="family-name">
-             rajeev dahiya
+            Ratilal Kotadia
            </div>
            <div class="family-desination">
-            father
+            Dada(Grand Father)
            </div>
-         </div> -->
+         </div>
+        </div>
       </div>
     </div>
 
@@ -659,11 +865,11 @@
 
   <div class="container-fullwidth title-container" >
   	<div class="row title-row">
-  		<div class="title">
-  			GROOM FAMILY
+  		<div class="" style="margin-top: 25px">
+  			
   		</div>
       <div class="groom-img">
-        <img src="<?php echo base_url(); ?>html/images/divider-img-odd.png">
+        <img src="<?php echo base_url(); ?>html/images/ttl-groomFamily.png">
       </div>
   	</div>
  </div>
@@ -905,11 +1111,11 @@
 <div id="gallery">
   <div class="container-fullwidth title-container" >
     <div class="row title-row">
-      <div class="title">
-        Gallery
+      <div class="" style="padding-top: 25px;">
+        
       </div>
       <div class="groom-img">
-        <img src="<?php echo base_url(); ?>html/images/divider-img.png">
+        <img src="<?php echo base_url(); ?>html/images/ttl-swtMemories.png">
       </div>
     </div>
  </div>

@@ -12,10 +12,10 @@
       		<div>
       			<form>
       				<div class="input-field">
-      					<input type="text" name="full_name" placeholder="Full Name" required="required">
+      					<input type="text" id="guest_name" name="full_name" placeholder="Full Name" required="required">
       				</div>
       				<div class="input-field">
-      					<input type="text" name="mobile" placeholder="Mobile" required="required" pattern="[0-9]" maxlength="10">
+      					<input type="text" id="guest_mobile" name="mobile" placeholder="Mobile" required="required" pattern="[0-9]" maxlength="10">
       				</div>
       				<div class="btn-area">
       					<center>
@@ -36,7 +36,7 @@
       		<div>
       			<form>
       				<div class="input-field">
-      					<input type="text" name="Otp" placeholder="Enter OTP" required="required" maxlength="4">
+      					<input type="text" id="Otp" name="Otp" placeholder="Enter OTP" required="required" maxlength="4">
       				</div>
       				<div class="btn-area">
       					<center>
@@ -52,7 +52,7 @@
 
       <div class="row" id="selectSide">
       	<div class="container">
-      		<center><h5>Select Side </h5></center>
+      		<center><h5>Whom are you related</h5></center>
       		<div class="row" id="activePerson">
       				<div class="slectSide-img-area" id="brideSide">
       				  <a href="#!" id="selectBride" data-value='bride'><img src="<?php echo base_url(); ?>html/images/female.jpeg" class="responsive-img">
@@ -166,7 +166,7 @@
       <div class="row">
       	<div class="selectEvents" id="slectEvent">
 			<div class="input-field col s12">
-			    <select multiple>
+			    <select multiple id="selectEvent">
 			      <option value="" disabled selected>Select Events</option>
 			      <option value="1">Check-in & lunch</option>
 			      <option value="2">Carnival of love</option>
@@ -180,7 +180,7 @@
       <div class="row input-field">
       	<center>
       		<button class="btn btnBack" id="btnBackRsvp">BACK</button>
-      		<button class="btn btn-submit modal-action modal-close" id="yesSubmitBtn">Submit</button>
+      		<button class="btn btn-submit" id="yesSubmitBtn">Submit</button>
       	</center>
       </div>
 
@@ -251,16 +251,13 @@
 <script type="text/javascript">
 	$(function(){
 
-
 		$("#noSubmit-btn").on("click",function(){
 			$("#areYouComming").show();
 			$("#whisheModal").modal("open");
 		});
 
 		$("#yesSubmitBtn").on("click", function(){
-			$("#areYouComming").show();
-			$('#thankUforWhishes').css('display','block');
-			$(".whishMdalYes").modal("open");
+			rsvpYes();
 		});
 
 		$('#closModal').on("click", function(){
@@ -272,10 +269,6 @@
 
 		 $('.modal').modal();
 
-		$("#yesSubmitBtn").on("click",function(){
-			rsvpYes();
-		});
-
 		$("#noSubmit-btn").on("click",function(){
 			rsvpNo();
 		});
@@ -284,6 +277,11 @@
 			$('#areYouComming').hide();
 			$('#GuestId').show();
 		});
+
+
+
+
+
 
 		$('.guestNumber a').click(function(){
 			$('.guestNumber a').css('background','#eee');
@@ -315,16 +313,34 @@
 
 		/*Guest id*/
 		$('#btnGuestId').click(function(){
-			$('#GuestId').hide();
-			$('#GuestOTP').show();
+			var guestname = $("#guest_name").val();
+			var guestmobile = $("#guest_mobile").val();
+
+			if(guestname == "" || guestname == ""){
+				alert("Please enter your name");
+			}else if(isNaN(guestmobile) || guestmobile.length!=10 || guestmobile==""){
+				alert("Please enter a valid mobile number!");
+			}else{
+				//@TODO send OTP 
+				$('#GuestId').hide();
+				$('#GuestOTP').show();
+			}
 		});
 
 
 		/*Guest Otp*/
 
 		$('#GuestOtp').click(function(){
-			$('#GuestOTP').hide();
-			$('#selectSide').show();
+			//@TODO verify otp that hase been sent
+			var otp = $("#Otp").val();
+			var mobile = $("#guest_mobile").val();
+			if(otp=="" || isNaN(otp) || otp.length!=4){
+				alert("Please enter valid OTP");
+			}else{
+				$('#GuestOTP').hide();
+				$('#selectSide').show();	
+			}
+			
 		});
 
 		$('#btnGuestOtp').click(function(){
@@ -335,8 +351,12 @@
 
 		/*Select Groom / Bride*/
 		$('#btnSelectSide').click(function(){
-			$('#selectSide').hide();
-			$('#RsvpDetails').show();
+			if($("#brideSide .responsive-img.active").length==0 && $("#groomSide .responsive-img.active").length==0){
+				alert("Please select who are you related");
+			}else{
+				$('#selectSide').hide();
+				$('#RsvpDetails').show();
+			}
 		});
 
 
@@ -397,7 +417,6 @@
 		});
 
 		/*ACTIVE Persone*/
-		activePerson
 		$('#activePerson a img').click(function(){
 			$('#activePerson a img').removeClass('active');
 			$(this).addClass('active');
@@ -411,6 +430,7 @@
 
 
 	function rsvpYes(){
+		var errorFlag = 0;
 		var submitData = {
 			"guest_count" 		: $(".guestNumber a.selected li").html(),
 			"Arrival_date"		: $("#arrival_date input.datepicker").val(),
@@ -418,12 +438,28 @@
 			"ArrivalRout"		: $("#arrivalRout a.selectedRout").data('value'),
 			"Departure_date"	: $("#DepartureDate input.datepicker").val(),
 			"Departure_time" 	: $("#DepartureTime input.timepicker").val(),
-			"DepartureRout"		: $("#DepartureRout a.selectedRout").data('value')
+			"DepartureRout"		: $("#DepartureRout a.selectedRout").data('value'),
+			"selectedEvents" : $("#selectEvent").val()
 		};
-		var base_url = $("#base_url").val();
-		$.post(base_url+"ajax/rsvp",{rsvpData:submitData},function(data){
-			console.log(data);
-		});
+		if(submitData.Arrival_date == "" || submitData.Arrival_time == "" || submitData.Departure_date == "" || submitData.Departure_time == ""){
+			errorFlag = 1;
+			alert("Please select arrival and departure details");
+
+		}else if(submitData.selectEvent.length == 0){
+			errorFlag = 1;
+			alert("Please select atleast one wedding function");
+		}
+
+		if(errorFlag == 0){
+			var base_url = $("#base_url").val();
+			$.post(base_url+"ajax/rsvp",{rsvpData:submitData},function(data){
+				$("#areYouComming").show();
+				$('#thankUforWhishes').css('display','block');
+				$(".whishMdalYes").modal("open");
+			});
+
+		}
+		
 	};
 
 	function rsvpNo(){

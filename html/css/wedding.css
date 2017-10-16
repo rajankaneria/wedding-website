@@ -1,3 +1,42 @@
+@font-face {
+    font-family: 'KABELN';
+    src: url('http://localhost/wedding-website/html/fonts/KABELN.ttf') format('truetype');
+}
+
+
+.col.s12.m4.date-top {
+    display: block;
+    padding: 60px;
+    text-align: center;
+}
+.col.s12.m4.date-top h6{
+
+    font-size: 22px;
+    color: #d2ae6d;
+}
+
+.col.s12.m4.venue-top {
+    display: block;
+    padding: 60px;
+    text-align: center;
+}
+.col.s12.m4.venue-top h6{
+    font-size: 22px;
+    color: #d2ae6d;
+}
+
+.top-venue {
+    color: #d4d5d8;
+    font-size: 16px;
+}
+.top-date{
+    color: #d4d5d8;
+    font-size: 16px;
+}
+
+
+
+
 nav{
     height: 90px;
     position: absolute;
@@ -115,7 +154,7 @@ span.heart img {
 }
 
 
-.wedding-main-content {
+/*.wedding-main-content {
     margin: 0 auto;
 
 width: 100%;
@@ -128,7 +167,20 @@ margin-bottom: -21px;
 margin-top: 120px;
 
 }
+*/
 
+.wedding-main-content {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: rgba(33, 44, 65, 0.6);
+    padding: 1px;
+    display: block;
+    margin-bottom: -20px;
+    margin-top: 120px;
+    padding-top: 15px;
+}
 
 .how-we-met-area {
     width: 100%;
@@ -147,7 +199,7 @@ margin-top: 120px;
    /* color: #313a4a;*/
     color: #928f8f;
     letter-spacing: 1px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: justify;
     width: 70%;
     margin: 0 auto;
@@ -224,9 +276,10 @@ margin-top: 120px;
 }
 .family-row
 {
-	padding-top: 50px;
+/*	padding-top: 50px;*/
     width: 90%;
     padding-bottom: 50px;
+    margin-bottom: 0;
 }
 
 .family-row .col.m3.s12{
@@ -234,6 +287,8 @@ margin-top: 120px;
     overflow: hidden;
     padding-right: 0px;
     padding-bottom: 0;
+    width: 20%;
+    padding: 15px;
 }
 .row.relation {
     position: absolute;
@@ -241,7 +296,7 @@ margin-top: 120px;
     background: linear-gradient(60deg, rgba(255, 255, 255, 0.78) 50%,rgba(255, 255, 255, 0.0)100%);
     width: 100%;
     padding: 10px 20px;
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
 
@@ -251,17 +306,18 @@ margin-top: 120px;
 }
 
 .family-name {
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(119, 79, 56);
     text-transform: capitalize;
 }
 .family-desination {
-    font-size: 17px;
-     color: rgb(119, 79, 56);
+    font-size: 14px;
+    color: rgba(119, 79, 56, 0.8);
     text-transform: capitalize;
 }
 .family-img {
     margin-bottom: 5px;
+    position: relative;
 }
 .family-img img {
     width: 100%;
@@ -270,13 +326,13 @@ margin-top: 120px;
     border: 5px solid #313a4a;
  }
 .wedding-title {
-       color: #fff;
+    color: #d2ae6d;
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 20px;
+/*    margin-top: 20px;*/
     letter-spacing: 2px;
-    margin-bottom: 10px;
+/*    margin-bottom: 10px;*/
 }
 .wedding-last-img
 {
@@ -299,8 +355,18 @@ margin-top: 120px;
     margin-bottom: 45px;
 }
 
-
 .row.wedding-countdown {
+    background: rgb(49, 58, 74);
+    margin-bottom: 0px;
+    padding: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px !important;
+    position: relative;
+    z-index: 1;
+    padding-top: 15px;
+}
+
+/*.row.wedding-countdown {
     background: rgb(49, 58, 74);
     margin-bottom: 0px;
     padding: 20px;
@@ -309,24 +375,38 @@ margin-top: 120px;
     position: relative;
     z-index: 1;
 }
-
+*/
 .countdown-item {
     width: 25%;
     float: left;
 }
 
-.countdown-value {
+/*.countdown-value {
     text-align: center;
     color: #fff;
     font-size: 50px;
     line-height: 50px;
+}*/
+
+.countdown-value {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    line-height: 28px;
 }
 
-.countdown-footer {
+/*.countdown-footer {
     text-align: center;
     color: #fff;
     font-weight: 200;
     font-size: 16px;
+    text-transform: uppercase;
+}*/
+.countdown-footer {
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -359,6 +439,7 @@ margin-top: 120px;
     color: rgb(49, 58, 74);
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 0px !important;
 }
 
 .image-container {
@@ -406,11 +487,12 @@ margin-top: 120px;
 }
 .couple-intro {
     color: #928f8f;
+    text-align: justify;
 }
 
 .section-title {
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .container-fullwidth.title-container {
     background-color: rgb(255, 255, 255);
@@ -421,7 +503,7 @@ margin-top: 120px;
     font-size: 30px;
     color: #313a4a;
     padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
     letter-spacing: 2px;
 }
 
@@ -503,8 +585,13 @@ margin-top: 120px;
 }
 .wedding-img {
     text-align: center;
-    padding-top: 20px;
+/*    padding-top: 20px;*/
     padding-bottom: 0px;
+}
+.wedding-img2 {
+    text-align: center;
+/*    padding-top: 20px;*/
+    padding-bottom: 10px;
 }
 
 .event-location-container {
@@ -520,6 +607,7 @@ margin-top: 120px;
 }
 .container-fullwidth.last {
     background-color: rgb(55, 64, 79);
+    display: none;
 }
 
 .wedding-last-title {
@@ -545,11 +633,11 @@ margin-top: 120px;
     text-align: center;
     margin-bottom: 40px;
 }
-.event-row {
+/*.event-row {
     margin-bottom: 100px;
     margin-top: 100px;
 }
-
+*/
 
 div#bride-family {
     background: #313a4a;
@@ -559,9 +647,10 @@ div#bride-family .title{
 }
 div#bride-img-border img{
     border: 5px solid rgb(255, 255, 255);
+    display: block;
 }
 #bride-img-border{
-    margin-top: -50px;
+    margin-top: -25px;
 }
 .footer
 {
@@ -949,7 +1038,7 @@ ul#lightgallery {
 }
 
 ul#lightgallery li {
-    width: 300px;
+    width: calc(25% - 5px);
     height: 200px;
     display: inline-block;
     padding: 10px;
@@ -958,6 +1047,7 @@ ul#lightgallery li img {
     width: 100%;
     height: auto;
     display: inline-block;
+    margin-bottom: 10px;
     border: 3px solid #fff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }

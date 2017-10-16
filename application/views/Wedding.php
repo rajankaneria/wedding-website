@@ -13,10 +13,21 @@
       </div>
   </div>
   </div>
-  <div class="wedding-main-content">
-    <div class="wedding-img"><img  src="<?php echo base_url(); ?>html/images/footer-img.png"></div>
-    <div class="wedding-title">Yesha & Rishabh</div>
-    <div class="wedding-date">5th January, 2018</div>
+  <div class="wedding-main-content row">
+    <div class="col s12 m4 date-top">
+        <h6>Date :</h6>
+        <div class="top-date">5th January, 2018</div>      
+    </div>
+    <div class="col s12 m4">
+      <div class="wedding-img"><img  src="<?php echo base_url(); ?>html/images/footer-img-1.png"></div>
+      <div class="wedding-title">Yesha & Rishabh</div>
+      <div class="wedding-img2"><img  src="<?php echo base_url(); ?>html/images/footer-img.png"></div>
+    </div>
+    <div class="col s12 m4 venue-top">
+      <h6>Venue :</h6>
+      <div class="top-venue">Kensville Golf & Country Club, Ahmedabad. </div>
+    </div>  
+    <!-- <div class="wedding-date">5th January, 2018</div> -->
   </div>
 </div>
 
@@ -70,9 +81,10 @@
 
 
 <div class="row wedding-white" id="couple">
-	<div class="section-title">HAPPY COUPLE</div>
+	<div class="section-title"></div>
 	<div class="happy-img">
-		<img src="<?php echo base_url(); ?>html/images/divider-img-odd.png">
+    <img src="<?php echo base_url(); ?>html/images/ttl-hpy-couple.png" class="responsive-img">
+		<!-- <img src="<?php //echo base_url(); ?>html/images/divider-img-odd.png"> -->
 	</div>
 
 
@@ -83,7 +95,7 @@
         <img class="img1" src="<?php echo base_url(); ?>html/images/female.jpeg">
       </div>
       <div class="couple-name">YESHA <span>KOTADIA</span></div>
-      <div class="couple-intro">Cras erat elit, dictum id bibendum nec, lacinia id tortor.</div>
+      <div class="couple-intro">About bride: Yesha Kotadia, is a 25 year old zealous woman. Her strength comes from her family and friends. She is very passionate and always on her toes about her work and helping people but prefers a late lazy sunday with movies and snuggles. She has a whole different nervous system when it comes to dancing, that operates on its individual capacity.</div>
     </div>
 		<div class="col m2 s12">
       <div class="heart-circle"><i class="fa fa-heart" aria-hidden="true"></i></div>
@@ -93,7 +105,7 @@
         <img class="img1" src="<?php echo base_url(); ?>html/images/male.jpeg">
       </div>
       <div class="couple-name">RISHABH <span>SHETH</span></div>
-      <div class="couple-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="couple-intro">Rishabh Sheth is a 28 year old business man with the heart of a child. He has an immense passion for adventure/skydiving and cannot imagine a life without his dogs. You can't tell that he's a shy man, because he can charm a room full of people.</div>
     </div>
 
 		
@@ -118,9 +130,10 @@
 </div>
 
 <div class="row event-row" id="program">
-	<div class="section-title">BRIDE EVENTS</div>
+	<div class="section-title"></div>
 	<div class="groom-img">
-		<img src="<?php echo base_url(); ?>html/images/divider-img.png">
+    <img src="<?php echo base_url(); ?>html/images/tt-BRIDE FUNCTIONS.png" class="responsive-img">
+		<!-- <img src="<?php// echo base_url(); ?>html/images/divider-img.png"> -->
 	</div>
 
 	<div class="event-list hide-on-small-only hide-on-med-only show-on-large">
@@ -295,9 +308,10 @@
 
 <!--============================================bride==========================-->
 <div id="bride_event" class="row event-row">
-	<div class="section-title">GROOM EVENTS</div>
+	<div class="section-title"></div>
 	<div class="groom-img">
-		<img src="<?php echo base_url(); ?>html/images/divider-img-odd.png">
+    <img src="<?php echo base_url(); ?>html/images/ttl-GROOM FUNCTIONS.png" class="responsive-img">
+		<!-- <img src="<?php // echo base_url(); ?>html/images/divider-img-odd.png"> -->
 	</div>
 
 	<div class="event-list  hide-on-small-only hide-on-med-only show-on-large">
@@ -509,46 +523,76 @@
  <div id="bride-img-border" class="row family-row hide-on-small-only hide-on-med-only show-on-large">
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+          <div class="row relation">
+           <div class="family-name">
+            Ratilal Kotadia
+           </div>
+           <div class="family-desination">
+            Dada(Grand Father)
+           </div>
          </div>
-         <!-- <div class="row relation">
-         <div class="family-name">
-           rajeev dahiya
-         </div>
-         <div class="family-desination">
-          father
-         </div>
-       </div> -->
+        </div>
       </div>
 
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+         <div class="row relation">
+        <div class="family-name">
+            Sulochana Kotadia
+           </div>
+           <div class="family-desination">
+           Baa(Grand Mother)
+           </div>
+        </div>
       </div>
-      <!-- <div class="row relation">
-      <div class="family-name">
-           jaheel dahiya
-         </div>
-         <div class="family-desination">
-          mother
-         </div>
-      </div> -->
     </div>
 
     <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+         <div class="row relation">
+          <div class="family-name">
+            Snehal Kotadia
+          </div>
+          <div class="family-desination">
+           Father
+          </div>
+        </div>
       </div>
-      <!-- <div class="row relation">
-      <div class="family-name">
-           jaheel dahiya
-         </div>
-         <div class="family-desination">
-          mother
-         </div>
-      </div> -->
+    </div>
+
+
+    <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+         <div class="row relation">
+        <div class="family-name">
+            Alpa Kotadia
+           </div>
+           <div class="family-desination">
+           Mother
+           </div>
+        </div>
+
+      </div>
     </div>
     
+    <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <div class="row relation">
+        <div class="family-name">
+            Rimal Kotadia
+           </div>
+           <div class="family-desination">
+           Brother 
+           </div>
+        </div>
+      </div>
+    </div>
+
     </div>
 
 
@@ -627,90 +671,129 @@
   <div class="row family-row  hide-on-small-only hide-on-med-only show-on-large">
   		<div class="col m3 s12">
   			<div class="family-img">
-  			   <img  src="<?php echo base_url(); ?>html/images/groom-family-1.jpg">
-  		  </div>
-        <!-- <div class="row relation">
+  			   <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+  	        <div class="row relation">
           <div class="family-name">
-           	 rajeev dahiya
+            Parag Sheth
           </div>
           <div class="family-desination">
-           	father
+            Father
           </div>
-        </div> --> 
-  		</div>
+        </div> 
+    	  </div>
+     	</div>
 
   		<div class="col m3 s12">
   			<div class="family-img">
-  			<img  src="<?php echo base_url(); ?>html/images/groom-family-2.jpg">
-  		</div>
-      <!-- <div class="row relation">
-    		<div class="family-name">
-    		   	 jaheel dahiya
-    		   </div>
-    		   <div class="family-desination">
-    		   	mother
-    		   </div>
-    		</div> -->
+  			<img  src="<?php echo base_url(); ?>html/images/F-img.png">
+  	      <div class="row relation">
+        <div class="family-name">
+            Punam Sheth
+           </div>
+           <div class="family-desination">
+            Mother
+           </div>
+        </div>
+    	</div>
       </div>
 
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/groom-family-3.jpg">
-      </div>
-      <!-- <div class="row relation">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <div class="row relation">
         <div class="family-name">
-             jaheel dahiya
+            Supas Sheth
            </div>
            <div class="family-desination">
-            mother
+            Brother
            </div>
-        </div> -->
+        </div>
+      </div>
       </div>
 
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/groom-family-4.jpg">
-      </div>
-      <!-- <div class="row relation">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <div class="row relation">
         <div class="family-name">
-             jaheel dahiya
+            Mayur Sheth
            </div>
            <div class="family-desination">
-            mother
+            Bade papa
            </div>
-        </div> -->
+        </div>
+      </div>
       </div>
 
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/groom-family-5.jpg">
-      </div>
-      <!-- <div class="row relation">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+         <div class="row relation">
         <div class="family-name">
-             jaheel dahiya
+            Smita Sheth
            </div>
            <div class="family-desination">
-            mother
+           Badi mummy
            </div>
-        </div> -->
+        </div>
+      </div>
       </div>
 
       <div class="col m3 s12">
         <div class="family-img">
-        <img  src="<?php echo base_url(); ?>html/images/groom-family-6.jpg">
-      </div>
-      <!-- <div class="row relation">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <div class="row relation">
         <div class="family-name">
-             jaheel dahiya
+             Ekta Shah
            </div>
            <div class="family-desination">
-            mother
+            Didi (Elder Sister)
            </div>
-        </div> -->
+        </div>
+      </div>
       </div>
 
-  
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+       <div class="row relation">
+        <div class="family-name">
+             Nilay Shah
+           </div>
+           <div class="family-desination">
+            Jiju (Brother-in-law)
+           </div>
+        </div>
+      </div>
+      </div>
 
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+         <div class="row relation">
+        <div class="family-name">
+            Amee Sheth
+           </div>
+           <div class="family-desination">
+            Younger Sister
+           </div>
+        </div>
+      </div>
+      </div>
+    
+      <div class="col m3 s12">
+        <div class="family-img">
+        <img  src="<?php echo base_url(); ?>html/images/F-img.png">
+        <div class="row relation">
+        <div class="family-name">
+            Ahana & Anaya
+           </div>
+           <div class="family-desination">
+           Two Nieces
+           </div>
+        </div>
+      </div>
+      </div>
   	</div>
 
      <!-- Groom Family Mobile responisve -->
@@ -839,9 +922,8 @@
     <p class="lead">A lightweight, customizable, modular, responsive, lightbox gallery plugin for jQuery.</p><a href="https://github.com/sachinchoolur/lightGallery" class="btn btn-primary btn-lg">View on github</a></div> -->
 <div class="row eventButtons">
   <ul>
-    <a href="#!" id="lunch" class="eventBtn active">Lunch</a>
-    <a href="#!" id="carnivalOfLove" class="eventBtn">Carnival Of Love</a>
-    <a href="#!" id="sangeet" class="eventBtn">Sangeet</a>
+    <a href="#!" id="lunch" class="eventBtn active">Yesha's Family</a>
+    <a href="#!" id="sangeet" class="eventBtn">Rishabh's Family </a>
   </ul>
 </div>
 
@@ -856,18 +938,22 @@
           </div>
         </a>
       </li> -->
-      <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/2-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
-      data-sub-html="<h4>Sangeet</h4>">
+      <li data-responsive="<?php echo base_url(); ?>html/images/bride-family-1.jpg" data-src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
         <a href="#!">
-        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-2.jpg">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
         </a>
       </li>
 
 
-       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
-      data-sub-html="<h4>Sunset Serenity</h4>">
+       <li data-responsive="<?php echo base_url(); ?>html/images/bride-family-2.jpg" data-src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
         <a href="">
-        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
+        </a>
+      </li>
+
+      <li data-responsive="<?php echo base_url(); ?>html/images/bride-family-3.jpg" data-src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
+        <a href="">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
         </a>
       </li>
     </ul>
@@ -889,14 +975,27 @@
      
 
  
-       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
-      data-sub-html="<h4>Sunset Serenity</h4>">
+       <li data-responsive="<?php echo base_url(); ?>html/images/bride-family-1.jpg" data-src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
         <a href="">
-        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/bride-family-1.jpg">
+        </a>
+      </li>
+
+      <li data-responsive="<?php echo base_url(); ?>html/images/bride-family-2.jpg" data-src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
+        <a href="">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/bride-family-2.jpg">
+        </a>
+      </li>
+
+      <li data-responsive="<?php echo base_url(); ?>html/images/bride-family-3.jpg" data-src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
+        <a href="">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/bride-family-3.jpg">
         </a>
       </li>
     </ul>
     </div>
+
+    <!-- Rishabh's Family -->
 
     <div class="EventGallery" id="sangeet-box">
     <ul id="lightgallery">
@@ -911,26 +1010,42 @@
       </li> -->
      
 
-      <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
-      data-sub-html="<h4>Sunset Serenity</h4>">
+      <li data-responsive="<?php echo base_url(); ?>html/images/groom-family-1.jpg" data-src="<?php echo base_url(); ?>html/images/groom-family-1.jpg">
         <a href="">
-        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/groom-family-1.jpg">
         </a>
       </li>
 
-      <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/4-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/4-1600.jpg"
-      data-sub-html="<h4>Coniston Calmness</h4>">
+      <li data-responsive="<?php echo base_url(); ?>html/images/groom-family-2.jpg" data-src="<?php echo base_url(); ?>html/images/groom-family-2.jpg">
         <a href="">
-        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-4.jpg">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/groom-family-2.jpg">
         </a>
       </li>
 
-       <li data-responsive="https://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375" data-src="https://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
-      data-sub-html="<h4>Sunset Serenity</h4>">
+       <li data-responsive="<?php echo base_url(); ?>html/images/groom-family-3.jpg" data-src="<?php echo base_url(); ?>html/images/groom-family-3.jpg">
         <a href="">
-        <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/groom-family-3.jpg">
         </a>
       </li>
+
+      <li data-responsive="<?php echo base_url(); ?>html/images/groom-family-4.jpg" data-src="<?php echo base_url(); ?>html/images/groom-family-4.jpg">
+        <a href="">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/groom-family-4.jpg">
+        </a>
+      </li>
+
+      <li data-responsive="<?php echo base_url(); ?>html/images/groom-family-5.jpg" data-src="<?php echo base_url(); ?>html/images/groom-family-5.jpg">
+        <a href="">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/groom-family-5.jpg">
+        </a>
+      </li>
+
+      <li data-responsive="<?php echo base_url(); ?>html/images/groom-family-6.jpg" data-src="<?php echo base_url(); ?>html/images/groom-family-6.jpg">
+        <a href="">
+        <img class="img-responsive" src="<?php echo base_url(); ?>html/images/groom-family-6.jpg">
+        </a>
+      </li>
+
     </ul>
     </div>
 </div>

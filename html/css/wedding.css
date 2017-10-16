@@ -131,7 +131,7 @@ margin-top: 120px;
 
 
 .how-we-met-area {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: block;
     position: relative;
@@ -1270,6 +1270,10 @@ ul#lightgallery li img {
             margin: 0 auto;
             float: none;
             width: 50%;
+        }
+
+        .how-we-met-area p{
+            width: 90%;
         }
     }
 

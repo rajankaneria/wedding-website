@@ -6,17 +6,17 @@ $(function(){
 	/*HOW WE MET*/
 
 	$('#img-top').on("mouseover", function(e){
-		$('#how-we-met-content').slideDown();
+		$('#how-we-met-content').slideDown(3000);
 		/*setInterval(howWeMet, 5000);*/
 	});
 
 	$('#img-top').on("click", function(e){
-		$('#how-we-met-content').slideDown();
+		$('#how-we-met-content').slideDown(3000);
 		/*setInterval(howWeMet, 5000);*/
 	});
 
 	$('#img-top').on("mouseleave", function() {
-	   $('#how-we-met-content').slideUp();
+	   $('#how-we-met-content').slideUp(3000);
 	});
 
 	/*function howWeMet(){

@@ -499,7 +499,7 @@
 <div class="container-fullwidth title-container" id="bride-family">
   <div class="row title-row">
     <div class="title">
-    BRIDE FAMILY & FRIENDS
+    BRIDE FAMILY
     </div>
     <div class="groom-img">
       <img src="<?php echo base_url(); ?>html/images/divider-img.png">
@@ -616,7 +616,7 @@
   <div class="container-fullwidth title-container" >
   	<div class="row title-row">
   		<div class="title">
-  			GROOM FAMILY & FRIENDS
+  			GROOM FAMILY
   		</div>
       <div class="groom-img">
         <img src="<?php echo base_url(); ?>html/images/divider-img-odd.png">
@@ -823,7 +823,7 @@
   <div class="container-fullwidth title-container" >
     <div class="row title-row">
       <div class="title">
-        Events Gallery
+        Gallery
       </div>
       <div class="groom-img">
         <img src="<?php echo base_url(); ?>html/images/divider-img.png">

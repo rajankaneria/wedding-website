@@ -62,3 +62,12 @@
 	text-transform: capitalize;
 	font-size: 17px;
 }
+.guestNumber a.selected{
+    background: #394962;
+    color: #fff;
+}
+
+a.selectedRout{
+    color:#394962 !important;
+    border-bottom: 2px solid #394962;
+}

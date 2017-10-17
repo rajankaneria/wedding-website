@@ -19,7 +19,7 @@
       				</div>
       				<div class="btn-area">
       					<center>
-      						<button class="btn btnBack" id="btnBackAreYouComing">BACK</button>
+      						<button type="button" class="btn btnBack" id="btnBackAreYouComing">BACK</button>
       						<input type="button" name="" value="Next" class="btn btnGuestId" id="btnGuestId">
       					</center>
       				</div>
@@ -40,7 +40,7 @@
       				</div>
       				<div class="btn-area">
       					<center>
-      						<button class="btn btnBack" id="btnGuestOtp">BACK</button>
+      						<button  type="button" class="btn btnBack" id="btnGuestOtp">BACK</button>
       						<input type="button" name="" value="Next" class="btn btnGuestId" id="GuestOtp">
       					</center>
       				</div>
@@ -55,14 +55,14 @@
       		<center><h5>Whom are you related</h5></center>
       		<div class="row" id="activePerson">
       				<div class="slectSide-img-area" id="brideSide">
-      				  <a href="#!" id="selectBride" data-value='bride'><img src="<?php echo base_url(); ?>html/images/female.jpeg" class="responsive-img">
+      				  <a href="#!" id="selectBride" data-value='bride'><img src="<?php echo base_url(); ?>html/images/female.jpeg" class="responsive-img" data-profile-id='20'>
       				  	<div class="brideName">
       				  		<h6>YESHA <span>KOTADIA</span></h6>
       				  	</div>
       				  </a>
       				</div>
       				<div class="slectSide-img-area" id="groomSide">
-      				  <a href="#!" id="selectGroom" data-value='groom'><img src="<?php echo base_url(); ?>html/images/male.jpeg" class="responsive-img">
+      				  <a href="#!" id="selectGroom" data-value='groom'><img src="<?php echo base_url(); ?>html/images/male.jpeg" class="responsive-img" data-profile-id='21'>
       				  <div class="groomName">
       				  		<h6>RISHABH <span>SHETH</span></h6>
       				  	</div>
@@ -71,7 +71,7 @@
       			</div>
   			<div class="btn-area">
   					<center>
-  						<button class="btn btnBack" id="btnBackSelectSide">BACK</button>
+  						<button type="button" class="btn btnBack" id="btnBackSelectSide">BACK</button>
   						<input type="button" name="" class="btn btnSelectSide" id="btnSelectSide" value="Next">
   					</center>
   				</div>
@@ -85,8 +85,8 @@
       	 	<!-- <div class="row"><button class="btn btnBack" id="btnBackAreYouComing">BACK</button></div> -->
       	 	<center><h5>Are You Coming?</h5></center></div>
       	 <div class="col s12 m12">
-	      	 <button id="btnYes" class="btn btn-yes-no">YES</button>
-	      	 <button id="btnNo" class="btn btn-yes-no">NO</button>
+	      	 <button type="button" id="btnYes" class="btn btn-yes-no">YES</button>
+	      	 <button type="button" id="btnNo" class="btn btn-yes-no">NO</button>
 	      </div>
       </div>
 	
@@ -164,23 +164,34 @@
       </div>
 
       <div class="row">
-      	<div class="selectEvents" id="slectEvent">
-			<div class="input-field col s12">
-			    <select multiple id="selectEvent">
-			      <option value="" disabled selected>Select Events</option>
-			      <option value="1">Check-in & lunch</option>
-			      <option value="2">Carnival of love</option>
-			      <option value="3">Sangeet Sandhya</option>
-		    	</select>
-		    	<label>Select Events</label>
-		  	</div>
+      	<div class="col s12 m6">
+      		<div class="selectEvents" id="slectEvent">
+				<div class="input-field col s12">
+				    <select multiple id="selectEvent">
+				      <option value="" disabled selected>Select Events</option>
+				      <option value="1">Check-in & lunch</option>
+				      <option value="2">Carnival of love</option>
+				      <option value="3">Sangeet Sandhya</option>
+				      <option value="3">Ganesh Sthapan, Mandap, Pithi</option>
+				      <option value="3">Wedding Procession</option>
+				      <option value="3">Hast Melap</option>
+				      <option value="3">Check Out</option>
+			    	</select>
+			    	<label>Select Events</label>
+			  	</div>
+			</div>
 		</div>
+      	<div class="col s12 m6">
+      		<a href="#!" onclick="$('#photoIdUpload').click()" class="btn btn-full" style="width: 100%;">Upload Photo ID</a>
+      		<div style="display: none;"><input type="file" id="photoIdUpload" /></div>
+      	</div>
+      	
       </div>
 
       <div class="row input-field">
       	<center>
-      		<button class="btn btnBack" id="btnBackRsvp">BACK</button>
-      		<button class="btn btn-submit" id="yesSubmitBtn">Submit</button>
+      		<button type="button" class="btn btnBack" id="btnBackRsvp">BACK</button>
+      		<button type="button" class="btn btn-submit" id="yesSubmitBtn">Submit</button>
       	</center>
       </div>
 
@@ -214,7 +225,7 @@
 				<div class="row">
 					<div class="input-field">
 						<center>
-						<button class="btn btnBack" id="btnNotComing">BACK</button>
+						<button type="button" class="btn btnBack" id="btnNotComing">BACK</button>
 						<button type="button" class="btn btn-submit modal-action modal-close" id="noSubmit-btn"> Submit</button>
 						</center>
 					</div>
@@ -249,8 +260,9 @@
 
 
 <script type="text/javascript">
+	var base_url;
 	$(function(){
-
+		base_url = $("#base_url").val();
 		$("#noSubmit-btn").on("click",function(){
 			$("#areYouComming").show();
 			$("#whisheModal").modal("open");
@@ -322,8 +334,12 @@
 				alert("Please enter a valid mobile number!");
 			}else{
 				//@TODO send OTP 
-				$('#GuestId').hide();
-				$('#GuestOTP').show();
+				$("#btnGuestId").val("Sending...");
+				$.post(base_url+"ajax/sendOTP",{mobile:guestmobile,guestname:guestname},function(data){
+					$('#GuestId').hide();
+					$('#GuestOTP').show();
+					$("#btnGuestId").val("Next");
+				});
 			}
 		});
 
@@ -337,8 +353,18 @@
 			if(otp=="" || isNaN(otp) || otp.length!=4){
 				alert("Please enter valid OTP");
 			}else{
-				$('#GuestOTP').hide();
-				$('#selectSide').show();	
+				$("#GuestOtp").val("Verifying...");
+				$.post(base_url+"ajax/verifyOTP",{otp:otp,mobile:mobile},function(data){
+					if(data == "verified"){
+						$('#GuestOTP').hide();
+						$('#selectSide').show();
+						$("#GuestOtp").val("Next");
+					}else{
+						$("#GuestOtp").val("Next");
+						alert("Verification Failed");
+					}
+					
+				});
 			}
 			
 		});
@@ -431,31 +457,34 @@
 
 	function rsvpYes(){
 		var errorFlag = 0;
+		var mobile = $("#guest_mobile").val();
+		var wedding_id = 8;
 		var submitData = {
-			"guest_count" 		: $(".guestNumber a.selected li").html(),
-			"Arrival_date"		: $("#arrival_date input.datepicker").val(),
-			"Arrival_time" 		: $("#arrival_time input.timepicker").val(),
-			"ArrivalRout"		: $("#arrivalRout a.selectedRout").data('value'),
-			"Departure_date"	: $("#DepartureDate input.datepicker").val(),
-			"Departure_time" 	: $("#DepartureTime input.timepicker").val(),
-			"DepartureRout"		: $("#DepartureRout a.selectedRout").data('value'),
-			"selectedEvents" : $("#selectEvent").val()
+			"wedding_id" : wedding_id,
+			"profile_id" : $("#selectSide .responsive-img.active").data("profile-id"),
+			"guest_count" : $(".guestNumber a.selected li").html(),
+			"arriving_on" : $("#arrival_date input.datepicker").val()+" "+$("#arrival_time input.timepicker").val(),
+			"arriving_by" : $("#arrivalRout a.selectedRout").data('value'),
+			"departing_on" : $("#DepartureDate input.datepicker").val()+" "+$("#DepartureTime input.timepicker").val(),
+			"departing_by"	: $("#DepartureRout a.selectedRout").data('value'),
+			"event_access" : "[6],[7],[8]",
+			"attending" : "yes"
 		};
+		
+
 		if(submitData.Arrival_date == "" || submitData.Arrival_time == "" || submitData.Departure_date == "" || submitData.Departure_time == ""){
 			errorFlag = 1;
 			alert("Please select arrival and departure details");
-
-		}else if(submitData.selectEvent.length == 0){
-			errorFlag = 1;
-			alert("Please select atleast one wedding function");
 		}
 
+		$("#yesSubmitBtn").val("Processing...");
 		if(errorFlag == 0){
 			var base_url = $("#base_url").val();
-			$.post(base_url+"ajax/rsvp",{rsvpData:submitData},function(data){
+			$.post(base_url+"ajax/rsvp",{rsvpData:submitData,mobile:mobile,wedding_id:wedding_id},function(data){
 				$("#areYouComming").show();
 				$('#thankUforWhishes').css('display','block');
 				$(".whishMdalYes").modal("open");
+				$("#yesSubmitBtn").val("Submit");
 			});
 
 		}
@@ -464,11 +493,16 @@
 
 	function rsvpNo(){
 		var submitData={
-
-			"bestWhises" : $("#bestWhises").val(),
-			"reasonFor"  : $("#reasonFor").val()
+			"wishes" : $("#bestWhises").val(),
+			"reason"  : $("#reasonFor").val()
 		};
-		console.log(submitData);
+		var mobile = $("#guest_mobile").val();
+		var wedding_id = 8;
+		$.post(base_url+"ajax/rsvp",{rsvpData:submitData,mobile:mobile,wedding_id:wedding_id},function(data){
+				$("#areYouComming").show();
+				$('#thankUforWhishes').css('display','block');
+				$(".whishMdalYes").modal("open");
+		});
 	}
 
 </script>
